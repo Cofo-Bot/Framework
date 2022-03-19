@@ -4,32 +4,32 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "/Users/gaurish/Desktop/Coding/Cofo-Framework/documentation/node_modules/@vuepress/core/lib/client/components/GlobalLayout.vue"
+import GlobalLayout from "/Users/gaurish/Desktop/Coding/Cofo-Framework/docs/node_modules/@vuepress/core/lib/client/components/GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-0cde5d5a",
-    path: "/api/classes/CofoClient.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0cde5d5a").then(next)
-    },
-  },
-  {
-    name: "v-071e82fa",
+    name: "v-6333faf8",
     path: "/api/classes/Command.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-071e82fa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-6333faf8").then(next)
     },
   },
   {
-    name: "v-0fcc2608",
+    name: "v-02cd006c",
+    path: "/api/classes/Listener.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-02cd006c").then(next)
+    },
+  },
+  {
+    name: "v-69d50e86",
     path: "/api/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0fcc2608").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-69d50e86").then(next)
     },
   },
   {
@@ -37,27 +37,51 @@ export const routes = [
     redirect: "/api/"
   },
   {
-    name: "v-4dce8eaa",
-    path: "/api/classes/Listener.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4dce8eaa").then(next)
-    },
-  },
-  {
-    name: "v-15dde1a3",
+    name: "v-09221b24",
     path: "/guide/creating-a-new-listener.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-15dde1a3").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-09221b24").then(next)
     },
   },
   {
-    name: "v-5545177c",
+    name: "v-ece7165c",
+    path: "/guide/creating-a-new-project.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-ece7165c").then(next)
+    },
+  },
+  {
+    name: "v-0e419a24",
+    path: "/guide/creating-a-new-command.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0e419a24").then(next)
+    },
+  },
+  {
+    name: "v-63341804",
+    path: "/api/classes/Embed.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-63341804").then(next)
+    },
+  },
+  {
+    name: "v-1c695094",
+    path: "/api/classes/CofoClient.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1c695094").then(next)
+    },
+  },
+  {
+    name: "v-37ba4a86",
     path: "/guide/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5545177c").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-37ba4a86").then(next)
     },
   },
   {
@@ -65,35 +89,11 @@ export const routes = [
     redirect: "/guide/"
   },
   {
-    name: "v-6aeee5a6",
-    path: "/guide/creating-a-new-command.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6aeee5a6").then(next)
-    },
-  },
-  {
-    name: "v-5b35cf11",
-    path: "/guide/creating-a-new-project.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5b35cf11").then(next)
-    },
-  },
-  {
-    name: "v-69c2ab83",
-    path: "/api/classes/Embed.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-69c2ab83").then(next)
-    },
-  },
-  {
-    name: "v-e50f2e48",
+    name: "v-3878459d",
     path: "/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e50f2e48").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-3878459d").then(next)
     },
   },
   {

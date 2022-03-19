@@ -245,3 +245,16 @@ export default new Listener("ready", async(client) => {
 
 </template>
 </CodeSwitcher>
+
+## Using a custom prefix
+- Cofo supports 3 types of prefix: Mention, custom and a default
+
+- For a custom prefix we send you the message as a parameter and you need to return a string as follows:
+
+```js
+client.fetchPrefix = (message) => {
+  db.getguild(message.guildID).then(data => {
+    return data.prefix
+  })
+}
+```

@@ -8,11 +8,612 @@ export const siteData = {
   "headTags": [],
   "pages": [
     {
+      "title": "Command",
+      "frontmatter": {},
+      "regularPath": "/api/classes/Command.html",
+      "relativePath": "api/classes/Command.md",
+      "key": "v-6333faf8",
+      "path": "/api/classes/Command.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Table of contents",
+          "slug": "table-of-contents",
+          "normalizedTitle": "table of contents",
+          "charIndex": 59
+        },
+        {
+          "level": 3,
+          "title": "Constructors",
+          "slug": "constructors",
+          "normalizedTitle": "constructors",
+          "charIndex": 81
+        },
+        {
+          "level": 3,
+          "title": "Properties",
+          "slug": "properties",
+          "normalizedTitle": "properties",
+          "charIndex": 114
+        },
+        {
+          "level": 2,
+          "title": "Constructors",
+          "slug": "constructors-2",
+          "normalizedTitle": "constructors",
+          "charIndex": 81
+        },
+        {
+          "level": 3,
+          "title": "constructor",
+          "slug": "constructor",
+          "normalizedTitle": "constructor",
+          "charIndex": 98
+        },
+        {
+          "level": 2,
+          "title": "Properties",
+          "slug": "properties-2",
+          "normalizedTitle": "properties",
+          "charIndex": 114
+        },
+        {
+          "level": 3,
+          "title": "aliases",
+          "slug": "aliases",
+          "normalizedTitle": "aliases",
+          "charIndex": 129
+        },
+        {
+          "level": 3,
+          "title": "argsRequired",
+          "slug": "argsrequired",
+          "normalizedTitle": "argsrequired",
+          "charIndex": 140
+        },
+        {
+          "level": 3,
+          "title": "botOwnerOnly",
+          "slug": "botowneronly",
+          "normalizedTitle": "botowneronly",
+          "charIndex": 156
+        },
+        {
+          "level": 3,
+          "title": "client",
+          "slug": "client",
+          "normalizedTitle": "client",
+          "charIndex": 172
+        },
+        {
+          "level": 3,
+          "title": "cooldown",
+          "slug": "cooldown",
+          "normalizedTitle": "cooldown",
+          "charIndex": 182
+        },
+        {
+          "level": 3,
+          "title": "cooldownMessage",
+          "slug": "cooldownmessage",
+          "normalizedTitle": "cooldownmessage",
+          "charIndex": 194
+        },
+        {
+          "level": 3,
+          "title": "customInteractionPreCondition",
+          "slug": "custominteractionprecondition",
+          "normalizedTitle": "custominteractionprecondition",
+          "charIndex": 213
+        },
+        {
+          "level": 3,
+          "title": "customPrecondition",
+          "slug": "customprecondition",
+          "normalizedTitle": "customprecondition",
+          "charIndex": 246
+        },
+        {
+          "level": 3,
+          "title": "defaultPermission",
+          "slug": "defaultpermission",
+          "normalizedTitle": "defaultpermission",
+          "charIndex": 268
+        },
+        {
+          "level": 3,
+          "title": "deleteCommand",
+          "slug": "deletecommand",
+          "normalizedTitle": "deletecommand",
+          "charIndex": 289
+        },
+        {
+          "level": 3,
+          "title": "description",
+          "slug": "description",
+          "normalizedTitle": "description",
+          "charIndex": 306
+        },
+        {
+          "level": 3,
+          "title": "dmOnly",
+          "slug": "dmonly",
+          "normalizedTitle": "dmonly",
+          "charIndex": 321
+        },
+        {
+          "level": 3,
+          "title": "guildOnly",
+          "slug": "guildonly",
+          "normalizedTitle": "guildonly",
+          "charIndex": 331
+        },
+        {
+          "level": 3,
+          "title": "guildOwneronly",
+          "slug": "guildowneronly",
+          "normalizedTitle": "guildowneronly",
+          "charIndex": 344
+        },
+        {
+          "level": 3,
+          "title": "name",
+          "slug": "name",
+          "normalizedTitle": "name",
+          "charIndex": 362
+        },
+        {
+          "level": 3,
+          "title": "options",
+          "slug": "options",
+          "normalizedTitle": "options",
+          "charIndex": 370
+        },
+        {
+          "level": 3,
+          "title": "slash",
+          "slug": "slash",
+          "normalizedTitle": "slash",
+          "charIndex": 381
+        },
+        {
+          "level": 3,
+          "title": "usage",
+          "slug": "usage",
+          "normalizedTitle": "usage",
+          "charIndex": 390
+        }
+      ],
+      "headersStr": "Table of contents Constructors Properties Constructors constructor Properties aliases argsRequired botOwnerOnly client cooldown cooldownMessage customInteractionPreCondition customPrecondition defaultPermission deleteCommand description dmOnly guildOnly guildOwneronly name options slash usage",
+      "content": "@cofo/framework / Exports / Command\n\n\n# Class: Command\n\n\n# Table of contents\n\n\n# Constructors\n\n * constructor\n\n\n# Properties\n\n * aliases\n * argsRequired\n * botOwnerOnly\n * client\n * cooldown\n * cooldownMessage\n * customInteractionPreCondition\n * customPrecondition\n * defaultPermission\n * deleteCommand\n * description\n * dmOnly\n * guildOnly\n * guildOwneronly\n * name\n * options\n * slash\n * usage\n\n\n# Constructors\n\n\n# constructor\n\n• new Command(client, options)\n\nCreate a new command\n\nsince 1.0.0\n\n# Parameters\n\nNAME                                     TYPE\nclient                                   CofoClient\noptions                                  Object\noptions.aliases?                         any[]\noptions.argsRequired?                    boolean\noptions.botOwnerOnly?                    boolean\noptions.cooldown?                        number\noptions.cooldownMessage?                 string\noptions.defaultPermission?               boolean\noptions.deleteCommand?                   boolean\noptions.description?                     string\noptions.dmOnly?                          boolean\noptions.guildOnly?                       boolean\noptions.guildOwnerOnly?                  boolean\noptions.name                             string\noptions.options?                         ApplicationCommandOptions[]\noptions.slash?                           boolean\noptions.usage?                           string\noptions.customInteractionPreCondition?   (interaction: CommandInteraction<TextableChannel>) =>\n                                         boolean\noptions.customPrecondition?              (message: Message<TextableChannel>) => boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:29\n\n\n# Properties\n\n\n# aliases\n\n• Optional aliases: any[]\n\n# Defined in\n\nsrc/Structures/Command.ts:14\n\n----------------------------------------\n\n\n# argsRequired\n\n• Optional argsRequired: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:16\n\n----------------------------------------\n\n\n# botOwnerOnly\n\n• Optional botOwnerOnly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:13\n\n----------------------------------------\n\n\n# client\n\n• Private client: CofoClient\n\n# Defined in\n\nsrc/Structures/Command.ts:5\n\n----------------------------------------\n\n\n# cooldown\n\n• Optional cooldown: number\n\n# Defined in\n\nsrc/Structures/Command.ts:9\n\n----------------------------------------\n\n\n# cooldownMessage\n\n• Optional cooldownMessage: string\n\n# Defined in\n\nsrc/Structures/Command.ts:17\n\n----------------------------------------\n\n\n# customInteractionPreCondition\n\n• Optional customInteractionPreCondition: (interaction: CommandInteraction<TextableChannel>) => boolean\n\n# Type declaration\n\n▸ (interaction): boolean\n\n# Parameters\n\nNAME          TYPE\ninteraction   CommandInteraction<TextableChannel>\n\n# Returns\n\nboolean\n\n# Defined in\n\nsrc/Structures/Command.ts:22\n\n----------------------------------------\n\n\n# customPrecondition\n\n• Optional customPrecondition: (message: Message<TextableChannel>) => boolean\n\n# Type declaration\n\n▸ (message): boolean\n\n# Parameters\n\nNAME      TYPE\nmessage   Message<TextableChannel>\n\n# Returns\n\nboolean\n\n# Defined in\n\nsrc/Structures/Command.ts:21\n\n----------------------------------------\n\n\n# defaultPermission\n\n• Optional defaultPermission: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:19\n\n----------------------------------------\n\n\n# deleteCommand\n\n• Optional deleteCommand: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:18\n\n----------------------------------------\n\n\n# description\n\n• description: undefined | string\n\n# Defined in\n\nsrc/Structures/Command.ts:7\n\n----------------------------------------\n\n\n# dmOnly\n\n• Optional dmOnly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:11\n\n----------------------------------------\n\n\n# guildOnly\n\n• Optional guildOnly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:10\n\n----------------------------------------\n\n\n# guildOwneronly\n\n• Optional guildOwneronly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:12\n\n----------------------------------------\n\n\n# name\n\n• name: string\n\n# Defined in\n\nsrc/Structures/Command.ts:6\n\n----------------------------------------\n\n\n# options\n\n• Optional options: ApplicationCommandOptions[]\n\n# Defined in\n\nsrc/Structures/Command.ts:8\n\n----------------------------------------\n\n\n# slash\n\n• Optional slash: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:20\n\n----------------------------------------\n\n\n# usage\n\n• Optional usage: string\n\n# Defined in\n\nsrc/Structures/Command.ts:15",
+      "normalizedContent": "@cofo/framework / exports / command\n\n\n# class: command\n\n\n# table of contents\n\n\n# constructors\n\n * constructor\n\n\n# properties\n\n * aliases\n * argsrequired\n * botowneronly\n * client\n * cooldown\n * cooldownmessage\n * custominteractionprecondition\n * customprecondition\n * defaultpermission\n * deletecommand\n * description\n * dmonly\n * guildonly\n * guildowneronly\n * name\n * options\n * slash\n * usage\n\n\n# constructors\n\n\n# constructor\n\n• new command(client, options)\n\ncreate a new command\n\nsince 1.0.0\n\n# parameters\n\nname                                     type\nclient                                   cofoclient\noptions                                  object\noptions.aliases?                         any[]\noptions.argsrequired?                    boolean\noptions.botowneronly?                    boolean\noptions.cooldown?                        number\noptions.cooldownmessage?                 string\noptions.defaultpermission?               boolean\noptions.deletecommand?                   boolean\noptions.description?                     string\noptions.dmonly?                          boolean\noptions.guildonly?                       boolean\noptions.guildowneronly?                  boolean\noptions.name                             string\noptions.options?                         applicationcommandoptions[]\noptions.slash?                           boolean\noptions.usage?                           string\noptions.custominteractionprecondition?   (interaction: commandinteraction<textablechannel>) =>\n                                         boolean\noptions.customprecondition?              (message: message<textablechannel>) => boolean\n\n# defined in\n\nsrc/structures/command.ts:29\n\n\n# properties\n\n\n# aliases\n\n• optional aliases: any[]\n\n# defined in\n\nsrc/structures/command.ts:14\n\n----------------------------------------\n\n\n# argsrequired\n\n• optional argsrequired: boolean\n\n# defined in\n\nsrc/structures/command.ts:16\n\n----------------------------------------\n\n\n# botowneronly\n\n• optional botowneronly: boolean\n\n# defined in\n\nsrc/structures/command.ts:13\n\n----------------------------------------\n\n\n# client\n\n• private client: cofoclient\n\n# defined in\n\nsrc/structures/command.ts:5\n\n----------------------------------------\n\n\n# cooldown\n\n• optional cooldown: number\n\n# defined in\n\nsrc/structures/command.ts:9\n\n----------------------------------------\n\n\n# cooldownmessage\n\n• optional cooldownmessage: string\n\n# defined in\n\nsrc/structures/command.ts:17\n\n----------------------------------------\n\n\n# custominteractionprecondition\n\n• optional custominteractionprecondition: (interaction: commandinteraction<textablechannel>) => boolean\n\n# type declaration\n\n▸ (interaction): boolean\n\n# parameters\n\nname          type\ninteraction   commandinteraction<textablechannel>\n\n# returns\n\nboolean\n\n# defined in\n\nsrc/structures/command.ts:22\n\n----------------------------------------\n\n\n# customprecondition\n\n• optional customprecondition: (message: message<textablechannel>) => boolean\n\n# type declaration\n\n▸ (message): boolean\n\n# parameters\n\nname      type\nmessage   message<textablechannel>\n\n# returns\n\nboolean\n\n# defined in\n\nsrc/structures/command.ts:21\n\n----------------------------------------\n\n\n# defaultpermission\n\n• optional defaultpermission: boolean\n\n# defined in\n\nsrc/structures/command.ts:19\n\n----------------------------------------\n\n\n# deletecommand\n\n• optional deletecommand: boolean\n\n# defined in\n\nsrc/structures/command.ts:18\n\n----------------------------------------\n\n\n# description\n\n• description: undefined | string\n\n# defined in\n\nsrc/structures/command.ts:7\n\n----------------------------------------\n\n\n# dmonly\n\n• optional dmonly: boolean\n\n# defined in\n\nsrc/structures/command.ts:11\n\n----------------------------------------\n\n\n# guildonly\n\n• optional guildonly: boolean\n\n# defined in\n\nsrc/structures/command.ts:10\n\n----------------------------------------\n\n\n# guildowneronly\n\n• optional guildowneronly: boolean\n\n# defined in\n\nsrc/structures/command.ts:12\n\n----------------------------------------\n\n\n# name\n\n• name: string\n\n# defined in\n\nsrc/structures/command.ts:6\n\n----------------------------------------\n\n\n# options\n\n• optional options: applicationcommandoptions[]\n\n# defined in\n\nsrc/structures/command.ts:8\n\n----------------------------------------\n\n\n# slash\n\n• optional slash: boolean\n\n# defined in\n\nsrc/structures/command.ts:20\n\n----------------------------------------\n\n\n# usage\n\n• optional usage: string\n\n# defined in\n\nsrc/structures/command.ts:15",
+      "charsets": {
+        "cjk": true
+      }
+    },
+    {
+      "title": "Listener",
+      "frontmatter": {},
+      "regularPath": "/api/classes/Listener.html",
+      "relativePath": "api/classes/Listener.md",
+      "key": "v-02cd006c",
+      "path": "/api/classes/Listener.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Type parameters",
+          "slug": "type-parameters",
+          "normalizedTitle": "type parameters",
+          "charIndex": 66
+        },
+        {
+          "level": 2,
+          "title": "Table of contents",
+          "slug": "table-of-contents",
+          "normalizedTitle": "table of contents",
+          "charIndex": 135
+        },
+        {
+          "level": 3,
+          "title": "Constructors",
+          "slug": "constructors",
+          "normalizedTitle": "constructors",
+          "charIndex": 157
+        },
+        {
+          "level": 3,
+          "title": "Properties",
+          "slug": "properties",
+          "normalizedTitle": "properties",
+          "charIndex": 190
+        },
+        {
+          "level": 2,
+          "title": "Constructors",
+          "slug": "constructors-2",
+          "normalizedTitle": "constructors",
+          "charIndex": 157
+        },
+        {
+          "level": 3,
+          "title": "constructor",
+          "slug": "constructor",
+          "normalizedTitle": "constructor",
+          "charIndex": 174
+        },
+        {
+          "level": 2,
+          "title": "Properties",
+          "slug": "properties-2",
+          "normalizedTitle": "properties",
+          "charIndex": 190
+        },
+        {
+          "level": 3,
+          "title": "key",
+          "slug": "key",
+          "normalizedTitle": "key",
+          "charIndex": 110
+        },
+        {
+          "level": 3,
+          "title": "run",
+          "slug": "run",
+          "normalizedTitle": "run",
+          "charIndex": 212
+        }
+      ],
+      "headersStr": "Type parameters Table of contents Constructors Properties Constructors constructor Properties key run",
+      "content": "@cofo/framework / Exports / Listener\n\n\n# Class: Listener<Key>\n\n\n# Type parameters\n\nNAME   TYPE\nKey    extends keyof EventListeners\n\n\n# Table of contents\n\n\n# Constructors\n\n * constructor\n\n\n# Properties\n\n * key\n * run\n\n\n# Constructors\n\n\n# constructor\n\n• new Listener<Key>(key, run)\n\nCreate a new Listener\n\nsince 1.0.0\n\n# Type parameters\n\nNAME   TYPE\nKey    extends keyof EventListeners\n\n# Parameters\n\nNAME   TYPE\nkey    Key\nrun    (client: CofoClient, ...args: EventListeners[Key]) => any\n\n# Defined in\n\nsrc/Structures/Listener.ts:11\n\n\n# Properties\n\n\n# key\n\n• key: Key\n\n----------------------------------------\n\n\n# run\n\n• run: (client: CofoClient, ...args: EventListeners[Key]) => any\n\n# Type declaration\n\n▸ (client, ...args): any\n\n# Parameters\n\nNAME      TYPE\nclient    CofoClient\n...args   EventListeners[Key]\n\n# Returns\n\nany",
+      "normalizedContent": "@cofo/framework / exports / listener\n\n\n# class: listener<key>\n\n\n# type parameters\n\nname   type\nkey    extends keyof eventlisteners\n\n\n# table of contents\n\n\n# constructors\n\n * constructor\n\n\n# properties\n\n * key\n * run\n\n\n# constructors\n\n\n# constructor\n\n• new listener<key>(key, run)\n\ncreate a new listener\n\nsince 1.0.0\n\n# type parameters\n\nname   type\nkey    extends keyof eventlisteners\n\n# parameters\n\nname   type\nkey    key\nrun    (client: cofoclient, ...args: eventlisteners[key]) => any\n\n# defined in\n\nsrc/structures/listener.ts:11\n\n\n# properties\n\n\n# key\n\n• key: key\n\n----------------------------------------\n\n\n# run\n\n• run: (client: cofoclient, ...args: eventlisteners[key]) => any\n\n# type declaration\n\n▸ (client, ...args): any\n\n# parameters\n\nname      type\nclient    cofoclient\n...args   eventlisteners[key]\n\n# returns\n\nany",
+      "charsets": {}
+    },
+    {
+      "title": "Exports",
+      "frontmatter": {},
+      "regularPath": "/api/",
+      "relativePath": "api/index.md",
+      "key": "v-69d50e86",
+      "path": "/api/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Table of contents",
+          "slug": "table-of-contents",
+          "normalizedTitle": "table of contents",
+          "charIndex": 50
+        },
+        {
+          "level": 3,
+          "title": "Classes",
+          "slug": "classes",
+          "normalizedTitle": "classes",
+          "charIndex": 72
+        }
+      ],
+      "headersStr": "Table of contents Classes",
+      "content": "@cofo/framework / Exports\n\n\n# @cofo/framework\n\n\n# Table of contents\n\n\n# Classes\n\n * CofoClient\n * Command\n * Embed\n * Listener",
+      "normalizedContent": "@cofo/framework / exports\n\n\n# @cofo/framework\n\n\n# table of contents\n\n\n# classes\n\n * cofoclient\n * command\n * embed\n * listener",
+      "charsets": {}
+    },
+    {
+      "title": "Creating a new listener",
+      "frontmatter": {},
+      "regularPath": "/guide/creating-a-new-listener.html",
+      "relativePath": "guide/creating-a-new-listener.md",
+      "key": "v-09221b24",
+      "path": "/guide/creating-a-new-listener.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "What is a listener?",
+          "slug": "what-is-a-listener",
+          "normalizedTitle": "what is a listener?",
+          "charIndex": 83
+        },
+        {
+          "level": 2,
+          "title": "Creating a new listener",
+          "slug": "creating-a-new-listener-2",
+          "normalizedTitle": "creating a new listener",
+          "charIndex": 2
+        },
+        {
+          "level": 3,
+          "title": "Code",
+          "slug": "code",
+          "normalizedTitle": "code",
+          "charIndex": 204
+        }
+      ],
+      "headersStr": "What is a listener? Creating a new listener Code",
+      "content": "# Creating a new listener\n\n * This guide will explain how to create a listener\n\n\n# What is a listener?\n\n * Listeners are basically gateway events fired by the discord api.\n\n\n# Creating a new listener\n\n\n# Code\n\n * Let's write some code....\n\nconst { Listener } = require('@cofo/framework');\n\n// The first parameter would always be client then followed by all the eris parameters\nmodule.exports = new Listener(\"messageCreate\", async(client, message) => {\n    message.channel.createMessage({\n        content: \"Pong!\"\n    })\n})\n\n\nimport { Listener, CofoClient } from '@cofo/framework';\nimport { Message } from 'eris';\n\n// The first parameter would always be client then followed by all the eris parameters\nexport default new Listener(\"messageCreate\", async(client: CofoClient, message: Message) => {\n    message.channel.createMessage({\n        content: \"Pong\"\n    })\n})\n",
+      "normalizedContent": "# creating a new listener\n\n * this guide will explain how to create a listener\n\n\n# what is a listener?\n\n * listeners are basically gateway events fired by the discord api.\n\n\n# creating a new listener\n\n\n# code\n\n * let's write some code....\n\nconst { listener } = require('@cofo/framework');\n\n// the first parameter would always be client then followed by all the eris parameters\nmodule.exports = new listener(\"messagecreate\", async(client, message) => {\n    message.channel.createmessage({\n        content: \"pong!\"\n    })\n})\n\n\nimport { listener, cofoclient } from '@cofo/framework';\nimport { message } from 'eris';\n\n// the first parameter would always be client then followed by all the eris parameters\nexport default new listener(\"messagecreate\", async(client: cofoclient, message: message) => {\n    message.channel.createmessage({\n        content: \"pong\"\n    })\n})\n",
+      "charsets": {}
+    },
+    {
+      "title": "Creating a new project",
+      "frontmatter": {},
+      "regularPath": "/guide/creating-a-new-project.html",
+      "relativePath": "guide/creating-a-new-project.md",
+      "key": "v-ece7165c",
+      "path": "/guide/creating-a-new-project.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Installation",
+          "slug": "installation",
+          "normalizedTitle": "installation",
+          "charIndex": 101
+        },
+        {
+          "level": 3,
+          "title": "Typescript",
+          "slug": "typescript",
+          "normalizedTitle": "typescript",
+          "charIndex": 303
+        },
+        {
+          "level": 2,
+          "title": "Structure",
+          "slug": "structure",
+          "normalizedTitle": "structure",
+          "charIndex": 590
+        }
+      ],
+      "headersStr": "Installation Typescript Structure",
+      "content": "# Creating a new project\n\n * This guide will explain you how to create your first bot with cofo!\n\n\n# Installation\n\n * Cofo Framework is on the npm registry, You can install it via any package manager.\n * Create the package.json via the initalize command:\n\nnpm init -y\n\n\nyarn init -y\n\n\npnpm init -y\n\n\n\n# Typescript\n\n * For Typescript, Kindly install typescript,@types/node as devDependencies.\n\n----------------------------------------\n\n * Once installed all the required dependencies, Install @cofo/framework\n\nnpm i @cofo/framework\n\n\nyarn add @cofo/framework\n\n\npnpm add @cofo/framework\n\n\n\n# Structure\n\n * Once you've installed the framework, create the base structure as follows:\n\n.\n├── my-project\n│   ├── `src`\n│   │   ├── `Commands`\n│   │   │   ├── `General`\n│   │   │       └── PingCommand.ts\n│   │   ├── `Listeners`\n│   │   │   ├── ReadyListener.ts\n│   │   ├── index.ts\n│   ├── package.json\n\n\n * Then, Lets Start writing the code\n\n * src/index\n\nconst { CofoClient } = require(\"@cofo/framework\");\n\nconst client = new CofoClient(\n  `Bot ${process.env.TOKEN}`,\n  {\n    baseDirectory: `${process.cwd()}/src/`, // Basically the directory where the commands and listeners folder shall be located (required)\n    defaultPrefix: \"!\", // The Default Prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionPrefix: true, // Whether to take mention as a prefix or not (required)\n    owners: [], // The Bot Owners, (required), This is required for botOwnerOnly commands.\n    testMode: {\n      // Whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildID: \"928880438641041480\",\n    },\n  }, // Eris Options:\n  {\n    intents: [\"guildMembers\", \"guildMessages\", \"guilds\"],\n    restMode: true, // Recommended\n  }\n);\n\n\nimport { CofoClient } from \"@cofo/framework\";\n\nconst client = new CofoClient(\n  `Bot ${process.env.TOKEN}`,\n  {\n    baseDirectory: `${process.cwd()}/src/`, // Basically the directory where the commands and listeners folder shall be located (required)\n    defaultPrefix: \"!\", // The Default Prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionPrefix: true, // Whether to take mention as a prefix or not (required)\n    owners: [], // The Bot Owners, (required), This is required for botOwnerOnly commands.\n    testMode: {\n      // Whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildID: \"928880438641041480\",\n    },\n  }, // Eris Options:\n  {\n    intents: [\"guildMembers\", \"guildMessages\", \"guilds\"],\n    restMode: true, // Recommended\n  }\n);\n\n\n * src/commands/General/PingCommand.ts\n\nconst { Command } = require(\"@cofo/framework\");\n\nmodule.exports = class PingCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client, message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client, interaction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n};\n\n\nimport { Command, CofoClient } from \"@cofo/framework\";\nimport { Message, CommandInteraction } from \"eris\";\n\nexport default class PingCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client: CofoClient, message: Message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client: CofoClient, interaction: CommandInteraction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n}\n\n\n * src/listeners/ReadyListener.ts\n\nconst { Listener } = require('@cofo/framework');\n\nmodule.exports = new Listener(\"ready\", async(client) => {\n  console.log(`Client has connected`)\n})\n\n\nimport { Listener } from '@cofo/framework';\n\nexport default new Listener(\"ready\", async(client) => {\n  console.log(`Client has connected`)\n})\n",
+      "normalizedContent": "# creating a new project\n\n * this guide will explain you how to create your first bot with cofo!\n\n\n# installation\n\n * cofo framework is on the npm registry, you can install it via any package manager.\n * create the package.json via the initalize command:\n\nnpm init -y\n\n\nyarn init -y\n\n\npnpm init -y\n\n\n\n# typescript\n\n * for typescript, kindly install typescript,@types/node as devdependencies.\n\n----------------------------------------\n\n * once installed all the required dependencies, install @cofo/framework\n\nnpm i @cofo/framework\n\n\nyarn add @cofo/framework\n\n\npnpm add @cofo/framework\n\n\n\n# structure\n\n * once you've installed the framework, create the base structure as follows:\n\n.\n├── my-project\n│   ├── `src`\n│   │   ├── `commands`\n│   │   │   ├── `general`\n│   │   │       └── pingcommand.ts\n│   │   ├── `listeners`\n│   │   │   ├── readylistener.ts\n│   │   ├── index.ts\n│   ├── package.json\n\n\n * then, lets start writing the code\n\n * src/index\n\nconst { cofoclient } = require(\"@cofo/framework\");\n\nconst client = new cofoclient(\n  `bot ${process.env.token}`,\n  {\n    basedirectory: `${process.cwd()}/src/`, // basically the directory where the commands and listeners folder shall be located (required)\n    defaultprefix: \"!\", // the default prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionprefix: true, // whether to take mention as a prefix or not (required)\n    owners: [], // the bot owners, (required), this is required for botowneronly commands.\n    testmode: {\n      // whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildid: \"928880438641041480\",\n    },\n  }, // eris options:\n  {\n    intents: [\"guildmembers\", \"guildmessages\", \"guilds\"],\n    restmode: true, // recommended\n  }\n);\n\n\nimport { cofoclient } from \"@cofo/framework\";\n\nconst client = new cofoclient(\n  `bot ${process.env.token}`,\n  {\n    basedirectory: `${process.cwd()}/src/`, // basically the directory where the commands and listeners folder shall be located (required)\n    defaultprefix: \"!\", // the default prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionprefix: true, // whether to take mention as a prefix or not (required)\n    owners: [], // the bot owners, (required), this is required for botowneronly commands.\n    testmode: {\n      // whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildid: \"928880438641041480\",\n    },\n  }, // eris options:\n  {\n    intents: [\"guildmembers\", \"guildmessages\", \"guilds\"],\n    restmode: true, // recommended\n  }\n);\n\n\n * src/commands/general/pingcommand.ts\n\nconst { command } = require(\"@cofo/framework\");\n\nmodule.exports = class pingcommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client, message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client, interaction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n};\n\n\nimport { command, cofoclient } from \"@cofo/framework\";\nimport { message, commandinteraction } from \"eris\";\n\nexport default class pingcommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client: cofoclient, message: message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client: cofoclient, interaction: commandinteraction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n}\n\n\n * src/listeners/readylistener.ts\n\nconst { listener } = require('@cofo/framework');\n\nmodule.exports = new listener(\"ready\", async(client) => {\n  console.log(`client has connected`)\n})\n\n\nimport { listener } from '@cofo/framework';\n\nexport default new listener(\"ready\", async(client) => {\n  console.log(`client has connected`)\n})\n",
+      "charsets": {}
+    },
+    {
+      "title": "Creating a new Command",
+      "frontmatter": {},
+      "regularPath": "/guide/creating-a-new-command.html",
+      "relativePath": "guide/creating-a-new-command.md",
+      "key": "v-0e419a24",
+      "path": "/guide/creating-a-new-command.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "File Structure",
+          "slug": "file-structure",
+          "normalizedTitle": "file structure",
+          "charIndex": 72
+        }
+      ],
+      "headersStr": "File Structure",
+      "content": "# Creating a new Command\n\n * This guide explains creating a command\n\n\n# File Structure\n\n * Assuming your file structure to be the basic, Specified Here, Create a new file and use the following code as an example:\n\nconst { Command } = require(\"@cofo/framework\");\n\nmodule.exports = class MyCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\", // The command name\n      description: \"pong\", // The command description\n      slash: true, // Whether this command should be registered slash or not\n      options: [], // Application Command Options same as eris\n      cooldown: 5000, // The command cooldown in MS\n      guildOnly: true, // Whether the command should be guild only.\n      dmOnly: false, // Whether the command should be dm only\n      guildOwneronly: false, // Whether the command should be guild's owner only\n      botOwnerOnly: false, // Whether the command should be bot's owner only\n      aliases: [\"pong\"], // Aliases other words which can trigger the command\n      usage: \"ping\", // The command usage, Helpful for help command\n      argsRequired: false, // Whether the command requires arguments\n      cooldownMessage: \"You are on cooldown\", // Message to send when the user is on cooldown, Default: You are on cooldown, try again later!\n      deleteCommand: true, // Whether to delete the message which triggered the command\n      defaultPermission: false, // Whether the command is enabled by default when the app is added to a guild\n      customPrecondition: (message) => true || false, // A Custom precondition, if this returns false the command won't be executed.\n      customInteractionPreCondition: (interaction) => true || false, // A Custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client, message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client, interaction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n};\n\n\nimport { Command, CofoClient } from \"@cofo/framework\";\nimport { Message, CommandInteraction } from \"eris\";\n\nexport default class MyCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\",\n      description: \"pong!\",\n      slash: true, // Whether this command should be registered slash or not\n      options: [], // Application Command Options same as eris\n      cooldown: 5000, // The command cooldown in MS\n      guildOnly: true, // Whether the command should be guild only.\n      dmOnly: false, // Whether the command should be dm only\n      guildOwneronly: false, // Whether the command should be guild's owner only\n      botOwnerOnly: false, // Whether the command should be bot's owner only\n      aliases: [\"pong\"], // Aliases other words which can trigger the command\n      usage: \"ping\", // The command usage, Helpful for help command\n      argsRequired: false, // Whether the command requires arguments\n      cooldownMessage: \"You are on cooldown\", // Message to send when the user is on cooldown, Default: You are on cooldown, try again later!\n      deleteCommand: true, // Whether to delete the message which triggered the command\n      defaultPermission: false, // Whether the command is enabled by default when the app is added to a guild\n      customPrecondition: (message) => true || false, // A Custom precondition, if this returns false the command won't be executed.\n      customInteractionPreCondition: (interaction) => true || false, // A Custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client: CofoClient, message: Message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client: CofoClient, interaction: CommandInteraction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n}\n",
+      "normalizedContent": "# creating a new command\n\n * this guide explains creating a command\n\n\n# file structure\n\n * assuming your file structure to be the basic, specified here, create a new file and use the following code as an example:\n\nconst { command } = require(\"@cofo/framework\");\n\nmodule.exports = class mycommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\", // the command name\n      description: \"pong\", // the command description\n      slash: true, // whether this command should be registered slash or not\n      options: [], // application command options same as eris\n      cooldown: 5000, // the command cooldown in ms\n      guildonly: true, // whether the command should be guild only.\n      dmonly: false, // whether the command should be dm only\n      guildowneronly: false, // whether the command should be guild's owner only\n      botowneronly: false, // whether the command should be bot's owner only\n      aliases: [\"pong\"], // aliases other words which can trigger the command\n      usage: \"ping\", // the command usage, helpful for help command\n      argsrequired: false, // whether the command requires arguments\n      cooldownmessage: \"you are on cooldown\", // message to send when the user is on cooldown, default: you are on cooldown, try again later!\n      deletecommand: true, // whether to delete the message which triggered the command\n      defaultpermission: false, // whether the command is enabled by default when the app is added to a guild\n      customprecondition: (message) => true || false, // a custom precondition, if this returns false the command won't be executed.\n      custominteractionprecondition: (interaction) => true || false, // a custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client, message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client, interaction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n};\n\n\nimport { command, cofoclient } from \"@cofo/framework\";\nimport { message, commandinteraction } from \"eris\";\n\nexport default class mycommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\",\n      description: \"pong!\",\n      slash: true, // whether this command should be registered slash or not\n      options: [], // application command options same as eris\n      cooldown: 5000, // the command cooldown in ms\n      guildonly: true, // whether the command should be guild only.\n      dmonly: false, // whether the command should be dm only\n      guildowneronly: false, // whether the command should be guild's owner only\n      botowneronly: false, // whether the command should be bot's owner only\n      aliases: [\"pong\"], // aliases other words which can trigger the command\n      usage: \"ping\", // the command usage, helpful for help command\n      argsrequired: false, // whether the command requires arguments\n      cooldownmessage: \"you are on cooldown\", // message to send when the user is on cooldown, default: you are on cooldown, try again later!\n      deletecommand: true, // whether to delete the message which triggered the command\n      defaultpermission: false, // whether the command is enabled by default when the app is added to a guild\n      customprecondition: (message) => true || false, // a custom precondition, if this returns false the command won't be executed.\n      custominteractionprecondition: (interaction) => true || false, // a custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client: cofoclient, message: message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client: cofoclient, interaction: commandinteraction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n}\n",
+      "charsets": {
+        "cjk": true
+      }
+    },
+    {
+      "title": "Embed",
+      "frontmatter": {},
+      "regularPath": "/api/classes/Embed.html",
+      "relativePath": "api/classes/Embed.md",
+      "key": "v-63341804",
+      "path": "/api/classes/Embed.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Table of contents",
+          "slug": "table-of-contents",
+          "normalizedTitle": "table of contents",
+          "charIndex": 55
+        },
+        {
+          "level": 3,
+          "title": "Constructors",
+          "slug": "constructors",
+          "normalizedTitle": "constructors",
+          "charIndex": 77
+        },
+        {
+          "level": 3,
+          "title": "Properties",
+          "slug": "properties",
+          "normalizedTitle": "properties",
+          "charIndex": 110
+        },
+        {
+          "level": 3,
+          "title": "Methods",
+          "slug": "methods",
+          "normalizedTitle": "methods",
+          "charIndex": 231
+        },
+        {
+          "level": 2,
+          "title": "Constructors",
+          "slug": "constructors-2",
+          "normalizedTitle": "constructors",
+          "charIndex": 77
+        },
+        {
+          "level": 3,
+          "title": "constructor",
+          "slug": "constructor",
+          "normalizedTitle": "constructor",
+          "charIndex": 94
+        },
+        {
+          "level": 2,
+          "title": "Properties",
+          "slug": "properties-2",
+          "normalizedTitle": "properties",
+          "charIndex": 110
+        },
+        {
+          "level": 3,
+          "title": "author",
+          "slug": "author",
+          "normalizedTitle": "author",
+          "charIndex": 125
+        },
+        {
+          "level": 3,
+          "title": "color",
+          "slug": "color",
+          "normalizedTitle": "color",
+          "charIndex": 135
+        },
+        {
+          "level": 3,
+          "title": "description",
+          "slug": "description",
+          "normalizedTitle": "description",
+          "charIndex": 144
+        },
+        {
+          "level": 3,
+          "title": "fields",
+          "slug": "fields",
+          "normalizedTitle": "fields",
+          "charIndex": 159
+        },
+        {
+          "level": 3,
+          "title": "footer",
+          "slug": "footer",
+          "normalizedTitle": "footer",
+          "charIndex": 169
+        },
+        {
+          "level": 3,
+          "title": "image",
+          "slug": "image",
+          "normalizedTitle": "image",
+          "charIndex": 179
+        },
+        {
+          "level": 3,
+          "title": "thumbnail",
+          "slug": "thumbnail",
+          "normalizedTitle": "thumbnail",
+          "charIndex": 188
+        },
+        {
+          "level": 3,
+          "title": "timestamp",
+          "slug": "timestamp",
+          "normalizedTitle": "timestamp",
+          "charIndex": 201
+        },
+        {
+          "level": 3,
+          "title": "title",
+          "slug": "title",
+          "normalizedTitle": "title",
+          "charIndex": 214
+        },
+        {
+          "level": 3,
+          "title": "url",
+          "slug": "url",
+          "normalizedTitle": "url",
+          "charIndex": 223
+        },
+        {
+          "level": 2,
+          "title": "Methods",
+          "slug": "methods-2",
+          "normalizedTitle": "methods",
+          "charIndex": 231
+        },
+        {
+          "level": 3,
+          "title": "addField",
+          "slug": "addfield",
+          "normalizedTitle": "addfield",
+          "charIndex": 243
+        },
+        {
+          "level": 3,
+          "title": "addFields",
+          "slug": "addfields",
+          "normalizedTitle": "addfields",
+          "charIndex": 255
+        },
+        {
+          "level": 3,
+          "title": "setAuthor",
+          "slug": "setauthor",
+          "normalizedTitle": "setauthor",
+          "charIndex": 268
+        },
+        {
+          "level": 3,
+          "title": "setColor",
+          "slug": "setcolor",
+          "normalizedTitle": "setcolor",
+          "charIndex": 281
+        },
+        {
+          "level": 3,
+          "title": "setDescription",
+          "slug": "setdescription",
+          "normalizedTitle": "setdescription",
+          "charIndex": 293
+        },
+        {
+          "level": 3,
+          "title": "setFooter",
+          "slug": "setfooter",
+          "normalizedTitle": "setfooter",
+          "charIndex": 311
+        },
+        {
+          "level": 3,
+          "title": "setImage",
+          "slug": "setimage",
+          "normalizedTitle": "setimage",
+          "charIndex": 324
+        },
+        {
+          "level": 3,
+          "title": "setThumbnail",
+          "slug": "setthumbnail",
+          "normalizedTitle": "setthumbnail",
+          "charIndex": 336
+        },
+        {
+          "level": 3,
+          "title": "setTimestamp",
+          "slug": "settimestamp",
+          "normalizedTitle": "settimestamp",
+          "charIndex": 352
+        },
+        {
+          "level": 3,
+          "title": "setTitle",
+          "slug": "settitle",
+          "normalizedTitle": "settitle",
+          "charIndex": 368
+        },
+        {
+          "level": 3,
+          "title": "setURL",
+          "slug": "seturl",
+          "normalizedTitle": "seturl",
+          "charIndex": 380
+        }
+      ],
+      "headersStr": "Table of contents Constructors Properties Methods Constructors constructor Properties author color description fields footer image thumbnail timestamp title url Methods addField addFields setAuthor setColor setDescription setFooter setImage setThumbnail setTimestamp setTitle setURL",
+      "content": "@cofo/framework / Exports / Embed\n\n\n# Class: Embed\n\n\n# Table of contents\n\n\n# Constructors\n\n * constructor\n\n\n# Properties\n\n * author\n * color\n * description\n * fields\n * footer\n * image\n * thumbnail\n * timestamp\n * title\n * url\n\n\n# Methods\n\n * addField\n * addFields\n * setAuthor\n * setColor\n * setDescription\n * setFooter\n * setImage\n * setThumbnail\n * setTimestamp\n * setTitle\n * setURL\n\n\n# Constructors\n\n\n# constructor\n\n• new Embed(data?)\n\nCreate a new Embed\n\nsince 1.0.0\n\n# Parameters\n\nNAME    TYPE\ndata?   EmbedOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:24\n\n\n# Properties\n\n\n# author\n\n• Optional author: EmbedAuthorOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:17\n\n----------------------------------------\n\n\n# color\n\n• Optional color: number\n\n# Defined in\n\nsrc/Structures/Embed.ts:13\n\n----------------------------------------\n\n\n# description\n\n• Optional description: string\n\n# Defined in\n\nsrc/Structures/Embed.ts:10\n\n----------------------------------------\n\n\n# fields\n\n• fields: EmbedField[]\n\n# Defined in\n\nsrc/Structures/Embed.ts:18\n\n----------------------------------------\n\n\n# footer\n\n• Optional footer: EmbedFooterOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:14\n\n----------------------------------------\n\n\n# image\n\n• Optional image: EmbedImageOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:15\n\n----------------------------------------\n\n\n# thumbnail\n\n• Optional thumbnail: EmbedImageOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:16\n\n----------------------------------------\n\n\n# timestamp\n\n• Optional timestamp: string | Date\n\n# Defined in\n\nsrc/Structures/Embed.ts:12\n\n----------------------------------------\n\n\n# title\n\n• Optional title: string\n\n# Defined in\n\nsrc/Structures/Embed.ts:9\n\n----------------------------------------\n\n\n# url\n\n• Optional url: string\n\n# Defined in\n\nsrc/Structures/Embed.ts:11\n\n\n# Methods\n\n\n# addField\n\n▸ addField(name, value, inline?): Embed\n\nAdd a field to embed\n\n# Parameters\n\nNAME      TYPE\nname      string | any[]\nvalue     string | any[]\ninline?   boolean\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:171\n\n----------------------------------------\n\n\n# addFields\n\n▸ addFields(fields): Embed\n\nAdd multiple fields to an embed\n\n# Parameters\n\nNAME     TYPE\nfields   EmbedField[]\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:186\n\n----------------------------------------\n\n\n# setAuthor\n\n▸ setAuthor(name, url, iconURL): Embed\n\nSet the embed author\n\n# Parameters\n\nNAME      TYPE\nname      string | any[]\nurl       undefined | string\niconURL   undefined | string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:145\n\n----------------------------------------\n\n\n# setColor\n\n▸ setColor(color): Embed\n\nSet The Embed Color\n\n# Parameters\n\nNAME    TYPE\ncolor   string | number\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:63\n\n----------------------------------------\n\n\n# setDescription\n\n▸ setDescription(description): Embed\n\nSet the Embed Description\n\n# Parameters\n\nNAME          TYPE\ndescription   string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:52\n\n----------------------------------------\n\n\n# setFooter\n\n▸ setFooter(iconURL, text): Embed\n\nSet The embed footer\n\n# Parameters\n\nNAME      TYPE\niconURL   undefined | string\ntext      string | any[]\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:103\n\n----------------------------------------\n\n\n# setImage\n\n▸ setImage(imageURL): Embed\n\nSet The Embed Image\n\n# Parameters\n\nNAME       TYPE\nimageURL   string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:121\n\n----------------------------------------\n\n\n# setThumbnail\n\n▸ setThumbnail(url): Embed\n\nSet the embed thumbnail\n\n# Parameters\n\nNAME   TYPE\nurl    string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:132\n\n----------------------------------------\n\n\n# setTimestamp\n\n▸ setTimestamp(timestamp?): Embed\n\nSet The Embed Timestamp\n\n# Parameters\n\nNAME        TYPE\ntimestamp   Date\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:92\n\n----------------------------------------\n\n\n# setTitle\n\n▸ setTitle(title): Embed\n\nSet the Embed Title\n\n# Parameters\n\nNAME    TYPE\ntitle   string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:41\n\n----------------------------------------\n\n\n# setURL\n\n▸ setURL(url): Embed\n\nSet The Embed URL\n\n# Parameters\n\nNAME   TYPE\nurl    string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:81",
+      "normalizedContent": "@cofo/framework / exports / embed\n\n\n# class: embed\n\n\n# table of contents\n\n\n# constructors\n\n * constructor\n\n\n# properties\n\n * author\n * color\n * description\n * fields\n * footer\n * image\n * thumbnail\n * timestamp\n * title\n * url\n\n\n# methods\n\n * addfield\n * addfields\n * setauthor\n * setcolor\n * setdescription\n * setfooter\n * setimage\n * setthumbnail\n * settimestamp\n * settitle\n * seturl\n\n\n# constructors\n\n\n# constructor\n\n• new embed(data?)\n\ncreate a new embed\n\nsince 1.0.0\n\n# parameters\n\nname    type\ndata?   embedoptions\n\n# defined in\n\nsrc/structures/embed.ts:24\n\n\n# properties\n\n\n# author\n\n• optional author: embedauthoroptions\n\n# defined in\n\nsrc/structures/embed.ts:17\n\n----------------------------------------\n\n\n# color\n\n• optional color: number\n\n# defined in\n\nsrc/structures/embed.ts:13\n\n----------------------------------------\n\n\n# description\n\n• optional description: string\n\n# defined in\n\nsrc/structures/embed.ts:10\n\n----------------------------------------\n\n\n# fields\n\n• fields: embedfield[]\n\n# defined in\n\nsrc/structures/embed.ts:18\n\n----------------------------------------\n\n\n# footer\n\n• optional footer: embedfooteroptions\n\n# defined in\n\nsrc/structures/embed.ts:14\n\n----------------------------------------\n\n\n# image\n\n• optional image: embedimageoptions\n\n# defined in\n\nsrc/structures/embed.ts:15\n\n----------------------------------------\n\n\n# thumbnail\n\n• optional thumbnail: embedimageoptions\n\n# defined in\n\nsrc/structures/embed.ts:16\n\n----------------------------------------\n\n\n# timestamp\n\n• optional timestamp: string | date\n\n# defined in\n\nsrc/structures/embed.ts:12\n\n----------------------------------------\n\n\n# title\n\n• optional title: string\n\n# defined in\n\nsrc/structures/embed.ts:9\n\n----------------------------------------\n\n\n# url\n\n• optional url: string\n\n# defined in\n\nsrc/structures/embed.ts:11\n\n\n# methods\n\n\n# addfield\n\n▸ addfield(name, value, inline?): embed\n\nadd a field to embed\n\n# parameters\n\nname      type\nname      string | any[]\nvalue     string | any[]\ninline?   boolean\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:171\n\n----------------------------------------\n\n\n# addfields\n\n▸ addfields(fields): embed\n\nadd multiple fields to an embed\n\n# parameters\n\nname     type\nfields   embedfield[]\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:186\n\n----------------------------------------\n\n\n# setauthor\n\n▸ setauthor(name, url, iconurl): embed\n\nset the embed author\n\n# parameters\n\nname      type\nname      string | any[]\nurl       undefined | string\niconurl   undefined | string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:145\n\n----------------------------------------\n\n\n# setcolor\n\n▸ setcolor(color): embed\n\nset the embed color\n\n# parameters\n\nname    type\ncolor   string | number\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:63\n\n----------------------------------------\n\n\n# setdescription\n\n▸ setdescription(description): embed\n\nset the embed description\n\n# parameters\n\nname          type\ndescription   string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:52\n\n----------------------------------------\n\n\n# setfooter\n\n▸ setfooter(iconurl, text): embed\n\nset the embed footer\n\n# parameters\n\nname      type\niconurl   undefined | string\ntext      string | any[]\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:103\n\n----------------------------------------\n\n\n# setimage\n\n▸ setimage(imageurl): embed\n\nset the embed image\n\n# parameters\n\nname       type\nimageurl   string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:121\n\n----------------------------------------\n\n\n# setthumbnail\n\n▸ setthumbnail(url): embed\n\nset the embed thumbnail\n\n# parameters\n\nname   type\nurl    string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:132\n\n----------------------------------------\n\n\n# settimestamp\n\n▸ settimestamp(timestamp?): embed\n\nset the embed timestamp\n\n# parameters\n\nname        type\ntimestamp   date\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:92\n\n----------------------------------------\n\n\n# settitle\n\n▸ settitle(title): embed\n\nset the embed title\n\n# parameters\n\nname    type\ntitle   string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:41\n\n----------------------------------------\n\n\n# seturl\n\n▸ seturl(url): embed\n\nset the embed url\n\n# parameters\n\nname   type\nurl    string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:81",
+      "charsets": {
+        "cjk": true
+      }
+    },
+    {
       "title": "CofoClient",
       "frontmatter": {},
       "regularPath": "/api/classes/CofoClient.html",
       "relativePath": "api/classes/CofoClient.md",
-      "key": "v-0cde5d5a",
+      "key": "v-1c695094",
       "path": "/api/classes/CofoClient.html",
       "headers": [
         {
@@ -1767,335 +2368,11 @@ export const siteData = {
       }
     },
     {
-      "title": "Command",
-      "frontmatter": {},
-      "regularPath": "/api/classes/Command.html",
-      "relativePath": "api/classes/Command.md",
-      "key": "v-071e82fa",
-      "path": "/api/classes/Command.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Table of contents",
-          "slug": "table-of-contents",
-          "normalizedTitle": "table of contents",
-          "charIndex": 59
-        },
-        {
-          "level": 3,
-          "title": "Constructors",
-          "slug": "constructors",
-          "normalizedTitle": "constructors",
-          "charIndex": 81
-        },
-        {
-          "level": 3,
-          "title": "Properties",
-          "slug": "properties",
-          "normalizedTitle": "properties",
-          "charIndex": 114
-        },
-        {
-          "level": 2,
-          "title": "Constructors",
-          "slug": "constructors-2",
-          "normalizedTitle": "constructors",
-          "charIndex": 81
-        },
-        {
-          "level": 3,
-          "title": "constructor",
-          "slug": "constructor",
-          "normalizedTitle": "constructor",
-          "charIndex": 98
-        },
-        {
-          "level": 2,
-          "title": "Properties",
-          "slug": "properties-2",
-          "normalizedTitle": "properties",
-          "charIndex": 114
-        },
-        {
-          "level": 3,
-          "title": "aliases",
-          "slug": "aliases",
-          "normalizedTitle": "aliases",
-          "charIndex": 129
-        },
-        {
-          "level": 3,
-          "title": "argsRequired",
-          "slug": "argsrequired",
-          "normalizedTitle": "argsrequired",
-          "charIndex": 140
-        },
-        {
-          "level": 3,
-          "title": "botOwnerOnly",
-          "slug": "botowneronly",
-          "normalizedTitle": "botowneronly",
-          "charIndex": 156
-        },
-        {
-          "level": 3,
-          "title": "client",
-          "slug": "client",
-          "normalizedTitle": "client",
-          "charIndex": 172
-        },
-        {
-          "level": 3,
-          "title": "cooldown",
-          "slug": "cooldown",
-          "normalizedTitle": "cooldown",
-          "charIndex": 182
-        },
-        {
-          "level": 3,
-          "title": "cooldownMessage",
-          "slug": "cooldownmessage",
-          "normalizedTitle": "cooldownmessage",
-          "charIndex": 194
-        },
-        {
-          "level": 3,
-          "title": "customInteractionPreCondition",
-          "slug": "custominteractionprecondition",
-          "normalizedTitle": "custominteractionprecondition",
-          "charIndex": 213
-        },
-        {
-          "level": 3,
-          "title": "customPrecondition",
-          "slug": "customprecondition",
-          "normalizedTitle": "customprecondition",
-          "charIndex": 246
-        },
-        {
-          "level": 3,
-          "title": "defaultPermission",
-          "slug": "defaultpermission",
-          "normalizedTitle": "defaultpermission",
-          "charIndex": 268
-        },
-        {
-          "level": 3,
-          "title": "deleteCommand",
-          "slug": "deletecommand",
-          "normalizedTitle": "deletecommand",
-          "charIndex": 289
-        },
-        {
-          "level": 3,
-          "title": "description",
-          "slug": "description",
-          "normalizedTitle": "description",
-          "charIndex": 306
-        },
-        {
-          "level": 3,
-          "title": "dmOnly",
-          "slug": "dmonly",
-          "normalizedTitle": "dmonly",
-          "charIndex": 321
-        },
-        {
-          "level": 3,
-          "title": "guildOnly",
-          "slug": "guildonly",
-          "normalizedTitle": "guildonly",
-          "charIndex": 331
-        },
-        {
-          "level": 3,
-          "title": "guildOwneronly",
-          "slug": "guildowneronly",
-          "normalizedTitle": "guildowneronly",
-          "charIndex": 344
-        },
-        {
-          "level": 3,
-          "title": "name",
-          "slug": "name",
-          "normalizedTitle": "name",
-          "charIndex": 362
-        },
-        {
-          "level": 3,
-          "title": "options",
-          "slug": "options",
-          "normalizedTitle": "options",
-          "charIndex": 370
-        },
-        {
-          "level": 3,
-          "title": "slash",
-          "slug": "slash",
-          "normalizedTitle": "slash",
-          "charIndex": 381
-        },
-        {
-          "level": 3,
-          "title": "usage",
-          "slug": "usage",
-          "normalizedTitle": "usage",
-          "charIndex": 390
-        }
-      ],
-      "headersStr": "Table of contents Constructors Properties Constructors constructor Properties aliases argsRequired botOwnerOnly client cooldown cooldownMessage customInteractionPreCondition customPrecondition defaultPermission deleteCommand description dmOnly guildOnly guildOwneronly name options slash usage",
-      "content": "@cofo/framework / Exports / Command\n\n\n# Class: Command\n\n\n# Table of contents\n\n\n# Constructors\n\n * constructor\n\n\n# Properties\n\n * aliases\n * argsRequired\n * botOwnerOnly\n * client\n * cooldown\n * cooldownMessage\n * customInteractionPreCondition\n * customPrecondition\n * defaultPermission\n * deleteCommand\n * description\n * dmOnly\n * guildOnly\n * guildOwneronly\n * name\n * options\n * slash\n * usage\n\n\n# Constructors\n\n\n# constructor\n\n• new Command(client, options)\n\nCreate a new command\n\nsince 1.0.0\n\n# Parameters\n\nNAME                                     TYPE\nclient                                   CofoClient\noptions                                  Object\noptions.aliases?                         any[]\noptions.argsRequired?                    boolean\noptions.botOwnerOnly?                    boolean\noptions.cooldown?                        number\noptions.cooldownMessage?                 string\noptions.defaultPermission?               boolean\noptions.deleteCommand?                   boolean\noptions.description?                     string\noptions.dmOnly?                          boolean\noptions.guildOnly?                       boolean\noptions.guildOwnerOnly?                  boolean\noptions.name                             string\noptions.options?                         ApplicationCommandOptions[]\noptions.slash?                           boolean\noptions.usage?                           string\noptions.customInteractionPreCondition?   (interaction: CommandInteraction<TextableChannel>) =>\n                                         boolean\noptions.customPrecondition?              (message: Message<TextableChannel>) => boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:29\n\n\n# Properties\n\n\n# aliases\n\n• Optional aliases: any[]\n\n# Defined in\n\nsrc/Structures/Command.ts:14\n\n----------------------------------------\n\n\n# argsRequired\n\n• Optional argsRequired: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:16\n\n----------------------------------------\n\n\n# botOwnerOnly\n\n• Optional botOwnerOnly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:13\n\n----------------------------------------\n\n\n# client\n\n• Private client: CofoClient\n\n# Defined in\n\nsrc/Structures/Command.ts:5\n\n----------------------------------------\n\n\n# cooldown\n\n• Optional cooldown: number\n\n# Defined in\n\nsrc/Structures/Command.ts:9\n\n----------------------------------------\n\n\n# cooldownMessage\n\n• Optional cooldownMessage: string\n\n# Defined in\n\nsrc/Structures/Command.ts:17\n\n----------------------------------------\n\n\n# customInteractionPreCondition\n\n• Optional customInteractionPreCondition: (interaction: CommandInteraction<TextableChannel>) => boolean\n\n# Type declaration\n\n▸ (interaction): boolean\n\n# Parameters\n\nNAME          TYPE\ninteraction   CommandInteraction<TextableChannel>\n\n# Returns\n\nboolean\n\n# Defined in\n\nsrc/Structures/Command.ts:22\n\n----------------------------------------\n\n\n# customPrecondition\n\n• Optional customPrecondition: (message: Message<TextableChannel>) => boolean\n\n# Type declaration\n\n▸ (message): boolean\n\n# Parameters\n\nNAME      TYPE\nmessage   Message<TextableChannel>\n\n# Returns\n\nboolean\n\n# Defined in\n\nsrc/Structures/Command.ts:21\n\n----------------------------------------\n\n\n# defaultPermission\n\n• Optional defaultPermission: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:19\n\n----------------------------------------\n\n\n# deleteCommand\n\n• Optional deleteCommand: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:18\n\n----------------------------------------\n\n\n# description\n\n• description: undefined | string\n\n# Defined in\n\nsrc/Structures/Command.ts:7\n\n----------------------------------------\n\n\n# dmOnly\n\n• Optional dmOnly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:11\n\n----------------------------------------\n\n\n# guildOnly\n\n• Optional guildOnly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:10\n\n----------------------------------------\n\n\n# guildOwneronly\n\n• Optional guildOwneronly: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:12\n\n----------------------------------------\n\n\n# name\n\n• name: string\n\n# Defined in\n\nsrc/Structures/Command.ts:6\n\n----------------------------------------\n\n\n# options\n\n• Optional options: ApplicationCommandOptions[]\n\n# Defined in\n\nsrc/Structures/Command.ts:8\n\n----------------------------------------\n\n\n# slash\n\n• Optional slash: boolean\n\n# Defined in\n\nsrc/Structures/Command.ts:20\n\n----------------------------------------\n\n\n# usage\n\n• Optional usage: string\n\n# Defined in\n\nsrc/Structures/Command.ts:15",
-      "normalizedContent": "@cofo/framework / exports / command\n\n\n# class: command\n\n\n# table of contents\n\n\n# constructors\n\n * constructor\n\n\n# properties\n\n * aliases\n * argsrequired\n * botowneronly\n * client\n * cooldown\n * cooldownmessage\n * custominteractionprecondition\n * customprecondition\n * defaultpermission\n * deletecommand\n * description\n * dmonly\n * guildonly\n * guildowneronly\n * name\n * options\n * slash\n * usage\n\n\n# constructors\n\n\n# constructor\n\n• new command(client, options)\n\ncreate a new command\n\nsince 1.0.0\n\n# parameters\n\nname                                     type\nclient                                   cofoclient\noptions                                  object\noptions.aliases?                         any[]\noptions.argsrequired?                    boolean\noptions.botowneronly?                    boolean\noptions.cooldown?                        number\noptions.cooldownmessage?                 string\noptions.defaultpermission?               boolean\noptions.deletecommand?                   boolean\noptions.description?                     string\noptions.dmonly?                          boolean\noptions.guildonly?                       boolean\noptions.guildowneronly?                  boolean\noptions.name                             string\noptions.options?                         applicationcommandoptions[]\noptions.slash?                           boolean\noptions.usage?                           string\noptions.custominteractionprecondition?   (interaction: commandinteraction<textablechannel>) =>\n                                         boolean\noptions.customprecondition?              (message: message<textablechannel>) => boolean\n\n# defined in\n\nsrc/structures/command.ts:29\n\n\n# properties\n\n\n# aliases\n\n• optional aliases: any[]\n\n# defined in\n\nsrc/structures/command.ts:14\n\n----------------------------------------\n\n\n# argsrequired\n\n• optional argsrequired: boolean\n\n# defined in\n\nsrc/structures/command.ts:16\n\n----------------------------------------\n\n\n# botowneronly\n\n• optional botowneronly: boolean\n\n# defined in\n\nsrc/structures/command.ts:13\n\n----------------------------------------\n\n\n# client\n\n• private client: cofoclient\n\n# defined in\n\nsrc/structures/command.ts:5\n\n----------------------------------------\n\n\n# cooldown\n\n• optional cooldown: number\n\n# defined in\n\nsrc/structures/command.ts:9\n\n----------------------------------------\n\n\n# cooldownmessage\n\n• optional cooldownmessage: string\n\n# defined in\n\nsrc/structures/command.ts:17\n\n----------------------------------------\n\n\n# custominteractionprecondition\n\n• optional custominteractionprecondition: (interaction: commandinteraction<textablechannel>) => boolean\n\n# type declaration\n\n▸ (interaction): boolean\n\n# parameters\n\nname          type\ninteraction   commandinteraction<textablechannel>\n\n# returns\n\nboolean\n\n# defined in\n\nsrc/structures/command.ts:22\n\n----------------------------------------\n\n\n# customprecondition\n\n• optional customprecondition: (message: message<textablechannel>) => boolean\n\n# type declaration\n\n▸ (message): boolean\n\n# parameters\n\nname      type\nmessage   message<textablechannel>\n\n# returns\n\nboolean\n\n# defined in\n\nsrc/structures/command.ts:21\n\n----------------------------------------\n\n\n# defaultpermission\n\n• optional defaultpermission: boolean\n\n# defined in\n\nsrc/structures/command.ts:19\n\n----------------------------------------\n\n\n# deletecommand\n\n• optional deletecommand: boolean\n\n# defined in\n\nsrc/structures/command.ts:18\n\n----------------------------------------\n\n\n# description\n\n• description: undefined | string\n\n# defined in\n\nsrc/structures/command.ts:7\n\n----------------------------------------\n\n\n# dmonly\n\n• optional dmonly: boolean\n\n# defined in\n\nsrc/structures/command.ts:11\n\n----------------------------------------\n\n\n# guildonly\n\n• optional guildonly: boolean\n\n# defined in\n\nsrc/structures/command.ts:10\n\n----------------------------------------\n\n\n# guildowneronly\n\n• optional guildowneronly: boolean\n\n# defined in\n\nsrc/structures/command.ts:12\n\n----------------------------------------\n\n\n# name\n\n• name: string\n\n# defined in\n\nsrc/structures/command.ts:6\n\n----------------------------------------\n\n\n# options\n\n• optional options: applicationcommandoptions[]\n\n# defined in\n\nsrc/structures/command.ts:8\n\n----------------------------------------\n\n\n# slash\n\n• optional slash: boolean\n\n# defined in\n\nsrc/structures/command.ts:20\n\n----------------------------------------\n\n\n# usage\n\n• optional usage: string\n\n# defined in\n\nsrc/structures/command.ts:15",
-      "charsets": {
-        "cjk": true
-      }
-    },
-    {
-      "title": "Exports",
-      "frontmatter": {},
-      "regularPath": "/api/",
-      "relativePath": "api/index.md",
-      "key": "v-0fcc2608",
-      "path": "/api/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Table of contents",
-          "slug": "table-of-contents",
-          "normalizedTitle": "table of contents",
-          "charIndex": 50
-        },
-        {
-          "level": 3,
-          "title": "Classes",
-          "slug": "classes",
-          "normalizedTitle": "classes",
-          "charIndex": 72
-        }
-      ],
-      "headersStr": "Table of contents Classes",
-      "content": "@cofo/framework / Exports\n\n\n# @cofo/framework\n\n\n# Table of contents\n\n\n# Classes\n\n * CofoClient\n * Command\n * Embed\n * Listener",
-      "normalizedContent": "@cofo/framework / exports\n\n\n# @cofo/framework\n\n\n# table of contents\n\n\n# classes\n\n * cofoclient\n * command\n * embed\n * listener",
-      "charsets": {}
-    },
-    {
-      "title": "Listener",
-      "frontmatter": {},
-      "regularPath": "/api/classes/Listener.html",
-      "relativePath": "api/classes/Listener.md",
-      "key": "v-4dce8eaa",
-      "path": "/api/classes/Listener.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Type parameters",
-          "slug": "type-parameters",
-          "normalizedTitle": "type parameters",
-          "charIndex": 66
-        },
-        {
-          "level": 2,
-          "title": "Table of contents",
-          "slug": "table-of-contents",
-          "normalizedTitle": "table of contents",
-          "charIndex": 135
-        },
-        {
-          "level": 3,
-          "title": "Constructors",
-          "slug": "constructors",
-          "normalizedTitle": "constructors",
-          "charIndex": 157
-        },
-        {
-          "level": 3,
-          "title": "Properties",
-          "slug": "properties",
-          "normalizedTitle": "properties",
-          "charIndex": 190
-        },
-        {
-          "level": 2,
-          "title": "Constructors",
-          "slug": "constructors-2",
-          "normalizedTitle": "constructors",
-          "charIndex": 157
-        },
-        {
-          "level": 3,
-          "title": "constructor",
-          "slug": "constructor",
-          "normalizedTitle": "constructor",
-          "charIndex": 174
-        },
-        {
-          "level": 2,
-          "title": "Properties",
-          "slug": "properties-2",
-          "normalizedTitle": "properties",
-          "charIndex": 190
-        },
-        {
-          "level": 3,
-          "title": "key",
-          "slug": "key",
-          "normalizedTitle": "key",
-          "charIndex": 110
-        },
-        {
-          "level": 3,
-          "title": "run",
-          "slug": "run",
-          "normalizedTitle": "run",
-          "charIndex": 212
-        }
-      ],
-      "headersStr": "Type parameters Table of contents Constructors Properties Constructors constructor Properties key run",
-      "content": "@cofo/framework / Exports / Listener\n\n\n# Class: Listener<Key>\n\n\n# Type parameters\n\nNAME   TYPE\nKey    extends keyof EventListeners\n\n\n# Table of contents\n\n\n# Constructors\n\n * constructor\n\n\n# Properties\n\n * key\n * run\n\n\n# Constructors\n\n\n# constructor\n\n• new Listener<Key>(key, run)\n\nCreate a new Listener\n\nsince 1.0.0\n\n# Type parameters\n\nNAME   TYPE\nKey    extends keyof EventListeners\n\n# Parameters\n\nNAME   TYPE\nkey    Key\nrun    (client: CofoClient, ...args: EventListeners[Key]) => any\n\n# Defined in\n\nsrc/Structures/Listener.ts:11\n\n\n# Properties\n\n\n# key\n\n• key: Key\n\n----------------------------------------\n\n\n# run\n\n• run: (client: CofoClient, ...args: EventListeners[Key]) => any\n\n# Type declaration\n\n▸ (client, ...args): any\n\n# Parameters\n\nNAME      TYPE\nclient    CofoClient\n...args   EventListeners[Key]\n\n# Returns\n\nany",
-      "normalizedContent": "@cofo/framework / exports / listener\n\n\n# class: listener<key>\n\n\n# type parameters\n\nname   type\nkey    extends keyof eventlisteners\n\n\n# table of contents\n\n\n# constructors\n\n * constructor\n\n\n# properties\n\n * key\n * run\n\n\n# constructors\n\n\n# constructor\n\n• new listener<key>(key, run)\n\ncreate a new listener\n\nsince 1.0.0\n\n# type parameters\n\nname   type\nkey    extends keyof eventlisteners\n\n# parameters\n\nname   type\nkey    key\nrun    (client: cofoclient, ...args: eventlisteners[key]) => any\n\n# defined in\n\nsrc/structures/listener.ts:11\n\n\n# properties\n\n\n# key\n\n• key: key\n\n----------------------------------------\n\n\n# run\n\n• run: (client: cofoclient, ...args: eventlisteners[key]) => any\n\n# type declaration\n\n▸ (client, ...args): any\n\n# parameters\n\nname      type\nclient    cofoclient\n...args   eventlisteners[key]\n\n# returns\n\nany",
-      "charsets": {}
-    },
-    {
-      "title": "Creating a new listener",
-      "frontmatter": {},
-      "regularPath": "/guide/creating-a-new-listener.html",
-      "relativePath": "guide/creating-a-new-listener.md",
-      "key": "v-15dde1a3",
-      "path": "/guide/creating-a-new-listener.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "What is a listener?",
-          "slug": "what-is-a-listener",
-          "normalizedTitle": "what is a listener?",
-          "charIndex": 83
-        },
-        {
-          "level": 2,
-          "title": "Creating a new listener",
-          "slug": "creating-a-new-listener-2",
-          "normalizedTitle": "creating a new listener",
-          "charIndex": 2
-        },
-        {
-          "level": 3,
-          "title": "Code",
-          "slug": "code",
-          "normalizedTitle": "code",
-          "charIndex": 204
-        }
-      ],
-      "headersStr": "What is a listener? Creating a new listener Code",
-      "content": "# Creating a new listener\n\n * This guide will explain how to create a listener\n\n\n# What is a listener?\n\n * Listeners are basically gateway events fired by the discord api.\n\n\n# Creating a new listener\n\n\n# Code\n\n * Let's write some code....\n\nconst { Listener } = require('@cofo/framework');\n\n// The first parameter would always be client then followed by all the eris parameters\nmodule.exports = new Listener(\"messageCreate\", async(client, message) => {\n    message.channel.createMessage({\n        content: \"Pong!\"\n    })\n})\n\n\nimport { Listener, CofoClient } from '@cofo/framework';\nimport { Message } from 'eris';\n\n// The first parameter would always be client then followed by all the eris parameters\nexport default new Listener(\"messageCreate\", async(client: CofoClient, message: Message) => {\n    message.channel.createMessage({\n        content: \"Pong\"\n    })\n})\n",
-      "normalizedContent": "# creating a new listener\n\n * this guide will explain how to create a listener\n\n\n# what is a listener?\n\n * listeners are basically gateway events fired by the discord api.\n\n\n# creating a new listener\n\n\n# code\n\n * let's write some code....\n\nconst { listener } = require('@cofo/framework');\n\n// the first parameter would always be client then followed by all the eris parameters\nmodule.exports = new listener(\"messagecreate\", async(client, message) => {\n    message.channel.createmessage({\n        content: \"pong!\"\n    })\n})\n\n\nimport { listener, cofoclient } from '@cofo/framework';\nimport { message } from 'eris';\n\n// the first parameter would always be client then followed by all the eris parameters\nexport default new listener(\"messagecreate\", async(client: cofoclient, message: message) => {\n    message.channel.createmessage({\n        content: \"pong\"\n    })\n})\n",
-      "charsets": {}
-    },
-    {
       "title": "Introduction",
       "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/index.md",
-      "key": "v-5545177c",
+      "key": "v-37ba4a86",
       "path": "/guide/",
       "headers": [
         {
@@ -2110,283 +2387,6 @@ export const siteData = {
       "content": "# Introduction\n\n * Cofo is a framework made in Typescript built on top of Eris\n\n\n# History\n\n * Time back, I used to use Discord.js as a library to create discord bots as it was really easy but my bots wouldnt always be ready for production use and it would take a lot of memory due to higher caching, So, My friend told me about Eris and i planned to switch over to eris, I found eris to be really interesting as it took less disk space and less memory as compared to Discordjs, But it had an issue, It had compartively less methods, So to make everybody's work easier i made this framework",
       "normalizedContent": "# introduction\n\n * cofo is a framework made in typescript built on top of eris\n\n\n# history\n\n * time back, i used to use discord.js as a library to create discord bots as it was really easy but my bots wouldnt always be ready for production use and it would take a lot of memory due to higher caching, so, my friend told me about eris and i planned to switch over to eris, i found eris to be really interesting as it took less disk space and less memory as compared to discordjs, but it had an issue, it had compartively less methods, so to make everybody's work easier i made this framework",
       "charsets": {}
-    },
-    {
-      "title": "Creating a new Command",
-      "frontmatter": {},
-      "regularPath": "/guide/creating-a-new-command.html",
-      "relativePath": "guide/creating-a-new-command.md",
-      "key": "v-6aeee5a6",
-      "path": "/guide/creating-a-new-command.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "File Structure",
-          "slug": "file-structure",
-          "normalizedTitle": "file structure",
-          "charIndex": 72
-        }
-      ],
-      "headersStr": "File Structure",
-      "content": "# Creating a new Command\n\n * This guide explains creating a command\n\n\n# File Structure\n\n * Assuming your file structure to be the basic, Specified Here, Create a new file and use the following code as an example:\n\nconst { Command } = require(\"@cofo/framework\");\n\nmodule.exports = class MyCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\", // The command name\n      description: \"pong\", // The command description\n      slash: true, // Whether this command should be registered slash or not\n      options: [], // Application Command Options same as eris\n      cooldown: 5000, // The command cooldown in MS\n      guildOnly: true, // Whether the command should be guild only.\n      dmOnly: false, // Whether the command should be dm only\n      guildOwneronly: false, // Whether the command should be guild's owner only\n      botOwnerOnly: false, // Whether the command should be bot's owner only\n      aliases: [\"pong\"], // Aliases other words which can trigger the command\n      usage: \"ping\", // The command usage, Helpful for help command\n      argsRequired: false, // Whether the command requires arguments\n      cooldownMessage: \"You are on cooldown\", // Message to send when the user is on cooldown, Default: You are on cooldown, try again later!\n      deleteCommand: true, // Whether to delete the message which triggered the command\n      defaultPermission: false, // Whether the command is enabled by default when the app is added to a guild\n      customPrecondition: (message) => true || false, // A Custom precondition, if this returns false the command won't be executed.\n      customInteractionPreCondition: (interaction) => true || false, // A Custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client, message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client, interaction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n};\n\n\nimport { Command, CofoClient } from \"@cofo/framework\";\nimport { Message, CommandInteraction } from \"eris\";\n\nexport default class MyCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\",\n      description: \"pong!\",\n      slash: true, // Whether this command should be registered slash or not\n      options: [], // Application Command Options same as eris\n      cooldown: 5000, // The command cooldown in MS\n      guildOnly: true, // Whether the command should be guild only.\n      dmOnly: false, // Whether the command should be dm only\n      guildOwneronly: false, // Whether the command should be guild's owner only\n      botOwnerOnly: false, // Whether the command should be bot's owner only\n      aliases: [\"pong\"], // Aliases other words which can trigger the command\n      usage: \"ping\", // The command usage, Helpful for help command\n      argsRequired: false, // Whether the command requires arguments\n      cooldownMessage: \"You are on cooldown\", // Message to send when the user is on cooldown, Default: You are on cooldown, try again later!\n      deleteCommand: true, // Whether to delete the message which triggered the command\n      defaultPermission: false, // Whether the command is enabled by default when the app is added to a guild\n      customPrecondition: (message) => true || false, // A Custom precondition, if this returns false the command won't be executed.\n      customInteractionPreCondition: (interaction) => true || false, // A Custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client: CofoClient, message: Message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client: CofoClient, interaction: CommandInteraction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n}\n",
-      "normalizedContent": "# creating a new command\n\n * this guide explains creating a command\n\n\n# file structure\n\n * assuming your file structure to be the basic, specified here, create a new file and use the following code as an example:\n\nconst { command } = require(\"@cofo/framework\");\n\nmodule.exports = class mycommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\", // the command name\n      description: \"pong\", // the command description\n      slash: true, // whether this command should be registered slash or not\n      options: [], // application command options same as eris\n      cooldown: 5000, // the command cooldown in ms\n      guildonly: true, // whether the command should be guild only.\n      dmonly: false, // whether the command should be dm only\n      guildowneronly: false, // whether the command should be guild's owner only\n      botowneronly: false, // whether the command should be bot's owner only\n      aliases: [\"pong\"], // aliases other words which can trigger the command\n      usage: \"ping\", // the command usage, helpful for help command\n      argsrequired: false, // whether the command requires arguments\n      cooldownmessage: \"you are on cooldown\", // message to send when the user is on cooldown, default: you are on cooldown, try again later!\n      deletecommand: true, // whether to delete the message which triggered the command\n      defaultpermission: false, // whether the command is enabled by default when the app is added to a guild\n      customprecondition: (message) => true || false, // a custom precondition, if this returns false the command won't be executed.\n      custominteractionprecondition: (interaction) => true || false, // a custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client, message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client, interaction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n};\n\n\nimport { command, cofoclient } from \"@cofo/framework\";\nimport { message, commandinteraction } from \"eris\";\n\nexport default class mycommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"ping\",\n      description: \"pong!\",\n      slash: true, // whether this command should be registered slash or not\n      options: [], // application command options same as eris\n      cooldown: 5000, // the command cooldown in ms\n      guildonly: true, // whether the command should be guild only.\n      dmonly: false, // whether the command should be dm only\n      guildowneronly: false, // whether the command should be guild's owner only\n      botowneronly: false, // whether the command should be bot's owner only\n      aliases: [\"pong\"], // aliases other words which can trigger the command\n      usage: \"ping\", // the command usage, helpful for help command\n      argsrequired: false, // whether the command requires arguments\n      cooldownmessage: \"you are on cooldown\", // message to send when the user is on cooldown, default: you are on cooldown, try again later!\n      deletecommand: true, // whether to delete the message which triggered the command\n      defaultpermission: false, // whether the command is enabled by default when the app is added to a guild\n      customprecondition: (message) => true || false, // a custom precondition, if this returns false the command won't be executed.\n      custominteractionprecondition: (interaction) => true || false, // a custom precondition for slash commands, if this returns false the command won't be executed.\n    });\n  }\n\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client: cofoclient, message: message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client: cofoclient, interaction: commandinteraction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n}\n",
-      "charsets": {
-        "cjk": true
-      }
-    },
-    {
-      "title": "Creating a new project",
-      "frontmatter": {},
-      "regularPath": "/guide/creating-a-new-project.html",
-      "relativePath": "guide/creating-a-new-project.md",
-      "key": "v-5b35cf11",
-      "path": "/guide/creating-a-new-project.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Installation",
-          "slug": "installation",
-          "normalizedTitle": "installation",
-          "charIndex": 101
-        },
-        {
-          "level": 3,
-          "title": "Typescript",
-          "slug": "typescript",
-          "normalizedTitle": "typescript",
-          "charIndex": 303
-        },
-        {
-          "level": 2,
-          "title": "Structure",
-          "slug": "structure",
-          "normalizedTitle": "structure",
-          "charIndex": 590
-        }
-      ],
-      "headersStr": "Installation Typescript Structure",
-      "content": "# Creating a new project\n\n * This guide will explain you how to create your first bot with cofo!\n\n\n# Installation\n\n * Cofo Framework is on the npm registry, You can install it via any package manager.\n * Create the package.json via the initalize command:\n\nnpm init -y\n\n\nyarn init -y\n\n\npnpm init -y\n\n\n\n# Typescript\n\n * For Typescript, Kindly install typescript,@types/node as devDependencies.\n\n----------------------------------------\n\n * Once installed all the required dependencies, Install @cofo/framework\n\nnpm i @cofo/framework\n\n\nyarn add @cofo/framework\n\n\npnpm add @cofo/framework\n\n\n\n# Structure\n\n * Once you've installed the framework, create the base structure as follows:\n\n.\n├── my-project\n│   ├── `src`\n│   │   ├── `Commands`\n│   │   │   ├── `General`\n│   │   │       └── PingCommand.ts\n│   │   ├── `Listeners`\n│   │   │   ├── ReadyListener.ts\n│   │   ├── index.ts\n│   ├── package.json\n\n\n * Then, Lets Start writing the code\n\n * src/index\n\nconst { CofoClient } = require(\"@cofo/framework\");\n\nconst client = new CofoClient(\n  `Bot ${process.env.TOKEN}`,\n  {\n    baseDirectory: `${process.cwd()}/src/`, // Basically the directory where the commands and listeners folder shall be located (required)\n    defaultPrefix: \"!\", // The Default Prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionPrefix: true, // Whether to take mention as a prefix or not (required)\n    owners: [], // The Bot Owners, (required), This is required for botOwnerOnly commands.\n    testMode: {\n      // Whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildID: \"928880438641041480\",\n    },\n  }, // Eris Options:\n  {\n    intents: [\"guildMembers\", \"guildMessages\", \"guilds\"],\n    restMode: true, // Recommended\n  }\n);\n\n\nimport { CofoClient } from \"@cofo/framework\";\n\nconst client = new CofoClient(\n  `Bot ${process.env.TOKEN}`,\n  {\n    baseDirectory: `${process.cwd()}/src/`, // Basically the directory where the commands and listeners folder shall be located (required)\n    defaultPrefix: \"!\", // The Default Prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionPrefix: true, // Whether to take mention as a prefix or not (required)\n    owners: [], // The Bot Owners, (required), This is required for botOwnerOnly commands.\n    testMode: {\n      // Whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildID: \"928880438641041480\",\n    },\n  }, // Eris Options:\n  {\n    intents: [\"guildMembers\", \"guildMessages\", \"guilds\"],\n    restMode: true, // Recommended\n  }\n);\n\n\n * src/commands/General/PingCommand.ts\n\nconst { Command } = require(\"@cofo/framework\");\n\nmodule.exports = class PingCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client, message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client, interaction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n};\n\n\nimport { Command, CofoClient } from \"@cofo/framework\";\nimport { Message, CommandInteraction } from \"eris\";\n\nexport default class PingCommand extends Command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n\n  /**\n   * Message Command\n   * @param {Client} client\n   * @param {Message} message\n   */\n  messageRun(client: CofoClient, message: Message) {\n    message.channel.createMessage({\n      content: \"Pong!\",\n    });\n  }\n  /**\n   * Slash Command\n   * @param {Client} client\n   * @param {Interaction} interaction\n   */\n  interactionRun(client: CofoClient, interaction: CommandInteraction) {\n    interaction.createMessage({\n      content: \"Pong!\",\n    });\n  }\n}\n\n\n * src/listeners/ReadyListener.ts\n\nconst { Listener } = require('@cofo/framework');\n\nmodule.exports = new Listener(\"ready\", async(client) => {\n  console.log(`Client has connected`)\n})\n\n\nimport { Listener } from '@cofo/framework';\n\nexport default new Listener(\"ready\", async(client) => {\n  console.log(`Client has connected`)\n})\n",
-      "normalizedContent": "# creating a new project\n\n * this guide will explain you how to create your first bot with cofo!\n\n\n# installation\n\n * cofo framework is on the npm registry, you can install it via any package manager.\n * create the package.json via the initalize command:\n\nnpm init -y\n\n\nyarn init -y\n\n\npnpm init -y\n\n\n\n# typescript\n\n * for typescript, kindly install typescript,@types/node as devdependencies.\n\n----------------------------------------\n\n * once installed all the required dependencies, install @cofo/framework\n\nnpm i @cofo/framework\n\n\nyarn add @cofo/framework\n\n\npnpm add @cofo/framework\n\n\n\n# structure\n\n * once you've installed the framework, create the base structure as follows:\n\n.\n├── my-project\n│   ├── `src`\n│   │   ├── `commands`\n│   │   │   ├── `general`\n│   │   │       └── pingcommand.ts\n│   │   ├── `listeners`\n│   │   │   ├── readylistener.ts\n│   │   ├── index.ts\n│   ├── package.json\n\n\n * then, lets start writing the code\n\n * src/index\n\nconst { cofoclient } = require(\"@cofo/framework\");\n\nconst client = new cofoclient(\n  `bot ${process.env.token}`,\n  {\n    basedirectory: `${process.cwd()}/src/`, // basically the directory where the commands and listeners folder shall be located (required)\n    defaultprefix: \"!\", // the default prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionprefix: true, // whether to take mention as a prefix or not (required)\n    owners: [], // the bot owners, (required), this is required for botowneronly commands.\n    testmode: {\n      // whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildid: \"928880438641041480\",\n    },\n  }, // eris options:\n  {\n    intents: [\"guildmembers\", \"guildmessages\", \"guilds\"],\n    restmode: true, // recommended\n  }\n);\n\n\nimport { cofoclient } from \"@cofo/framework\";\n\nconst client = new cofoclient(\n  `bot ${process.env.token}`,\n  {\n    basedirectory: `${process.cwd()}/src/`, // basically the directory where the commands and listeners folder shall be located (required)\n    defaultprefix: \"!\", // the default prefix to use if no custom prefix / mention prefix enabled (required)\n    mentionprefix: true, // whether to take mention as a prefix or not (required)\n    owners: [], // the bot owners, (required), this is required for botowneronly commands.\n    testmode: {\n      // whether the bot is in development mode, if enabled provide a guild id where the slash commands would be registered (not compulsory)\n      enabled: true,\n      guildid: \"928880438641041480\",\n    },\n  }, // eris options:\n  {\n    intents: [\"guildmembers\", \"guildmessages\", \"guilds\"],\n    restmode: true, // recommended\n  }\n);\n\n\n * src/commands/general/pingcommand.ts\n\nconst { command } = require(\"@cofo/framework\");\n\nmodule.exports = class pingcommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client, message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client, interaction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n};\n\n\nimport { command, cofoclient } from \"@cofo/framework\";\nimport { message, commandinteraction } from \"eris\";\n\nexport default class pingcommand extends command {\n  constructor(client) {\n    super(client, {\n      name: \"mycommandname\",\n      description: \"mycommanddescription\",\n    });\n  }\n\n  /**\n   * message command\n   * @param {client} client\n   * @param {message} message\n   */\n  messagerun(client: cofoclient, message: message) {\n    message.channel.createmessage({\n      content: \"pong!\",\n    });\n  }\n  /**\n   * slash command\n   * @param {client} client\n   * @param {interaction} interaction\n   */\n  interactionrun(client: cofoclient, interaction: commandinteraction) {\n    interaction.createmessage({\n      content: \"pong!\",\n    });\n  }\n}\n\n\n * src/listeners/readylistener.ts\n\nconst { listener } = require('@cofo/framework');\n\nmodule.exports = new listener(\"ready\", async(client) => {\n  console.log(`client has connected`)\n})\n\n\nimport { listener } from '@cofo/framework';\n\nexport default new listener(\"ready\", async(client) => {\n  console.log(`client has connected`)\n})\n",
-      "charsets": {}
-    },
-    {
-      "title": "Embed",
-      "frontmatter": {},
-      "regularPath": "/api/classes/Embed.html",
-      "relativePath": "api/classes/Embed.md",
-      "key": "v-69c2ab83",
-      "path": "/api/classes/Embed.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Table of contents",
-          "slug": "table-of-contents",
-          "normalizedTitle": "table of contents",
-          "charIndex": 55
-        },
-        {
-          "level": 3,
-          "title": "Constructors",
-          "slug": "constructors",
-          "normalizedTitle": "constructors",
-          "charIndex": 77
-        },
-        {
-          "level": 3,
-          "title": "Properties",
-          "slug": "properties",
-          "normalizedTitle": "properties",
-          "charIndex": 110
-        },
-        {
-          "level": 3,
-          "title": "Methods",
-          "slug": "methods",
-          "normalizedTitle": "methods",
-          "charIndex": 231
-        },
-        {
-          "level": 2,
-          "title": "Constructors",
-          "slug": "constructors-2",
-          "normalizedTitle": "constructors",
-          "charIndex": 77
-        },
-        {
-          "level": 3,
-          "title": "constructor",
-          "slug": "constructor",
-          "normalizedTitle": "constructor",
-          "charIndex": 94
-        },
-        {
-          "level": 2,
-          "title": "Properties",
-          "slug": "properties-2",
-          "normalizedTitle": "properties",
-          "charIndex": 110
-        },
-        {
-          "level": 3,
-          "title": "author",
-          "slug": "author",
-          "normalizedTitle": "author",
-          "charIndex": 125
-        },
-        {
-          "level": 3,
-          "title": "color",
-          "slug": "color",
-          "normalizedTitle": "color",
-          "charIndex": 135
-        },
-        {
-          "level": 3,
-          "title": "description",
-          "slug": "description",
-          "normalizedTitle": "description",
-          "charIndex": 144
-        },
-        {
-          "level": 3,
-          "title": "fields",
-          "slug": "fields",
-          "normalizedTitle": "fields",
-          "charIndex": 159
-        },
-        {
-          "level": 3,
-          "title": "footer",
-          "slug": "footer",
-          "normalizedTitle": "footer",
-          "charIndex": 169
-        },
-        {
-          "level": 3,
-          "title": "image",
-          "slug": "image",
-          "normalizedTitle": "image",
-          "charIndex": 179
-        },
-        {
-          "level": 3,
-          "title": "thumbnail",
-          "slug": "thumbnail",
-          "normalizedTitle": "thumbnail",
-          "charIndex": 188
-        },
-        {
-          "level": 3,
-          "title": "timestamp",
-          "slug": "timestamp",
-          "normalizedTitle": "timestamp",
-          "charIndex": 201
-        },
-        {
-          "level": 3,
-          "title": "title",
-          "slug": "title",
-          "normalizedTitle": "title",
-          "charIndex": 214
-        },
-        {
-          "level": 3,
-          "title": "url",
-          "slug": "url",
-          "normalizedTitle": "url",
-          "charIndex": 223
-        },
-        {
-          "level": 2,
-          "title": "Methods",
-          "slug": "methods-2",
-          "normalizedTitle": "methods",
-          "charIndex": 231
-        },
-        {
-          "level": 3,
-          "title": "addField",
-          "slug": "addfield",
-          "normalizedTitle": "addfield",
-          "charIndex": 243
-        },
-        {
-          "level": 3,
-          "title": "addFields",
-          "slug": "addfields",
-          "normalizedTitle": "addfields",
-          "charIndex": 255
-        },
-        {
-          "level": 3,
-          "title": "setAuthor",
-          "slug": "setauthor",
-          "normalizedTitle": "setauthor",
-          "charIndex": 268
-        },
-        {
-          "level": 3,
-          "title": "setColor",
-          "slug": "setcolor",
-          "normalizedTitle": "setcolor",
-          "charIndex": 281
-        },
-        {
-          "level": 3,
-          "title": "setDescription",
-          "slug": "setdescription",
-          "normalizedTitle": "setdescription",
-          "charIndex": 293
-        },
-        {
-          "level": 3,
-          "title": "setFooter",
-          "slug": "setfooter",
-          "normalizedTitle": "setfooter",
-          "charIndex": 311
-        },
-        {
-          "level": 3,
-          "title": "setImage",
-          "slug": "setimage",
-          "normalizedTitle": "setimage",
-          "charIndex": 324
-        },
-        {
-          "level": 3,
-          "title": "setThumbnail",
-          "slug": "setthumbnail",
-          "normalizedTitle": "setthumbnail",
-          "charIndex": 336
-        },
-        {
-          "level": 3,
-          "title": "setTimestamp",
-          "slug": "settimestamp",
-          "normalizedTitle": "settimestamp",
-          "charIndex": 352
-        },
-        {
-          "level": 3,
-          "title": "setTitle",
-          "slug": "settitle",
-          "normalizedTitle": "settitle",
-          "charIndex": 368
-        },
-        {
-          "level": 3,
-          "title": "setURL",
-          "slug": "seturl",
-          "normalizedTitle": "seturl",
-          "charIndex": 380
-        }
-      ],
-      "headersStr": "Table of contents Constructors Properties Methods Constructors constructor Properties author color description fields footer image thumbnail timestamp title url Methods addField addFields setAuthor setColor setDescription setFooter setImage setThumbnail setTimestamp setTitle setURL",
-      "content": "@cofo/framework / Exports / Embed\n\n\n# Class: Embed\n\n\n# Table of contents\n\n\n# Constructors\n\n * constructor\n\n\n# Properties\n\n * author\n * color\n * description\n * fields\n * footer\n * image\n * thumbnail\n * timestamp\n * title\n * url\n\n\n# Methods\n\n * addField\n * addFields\n * setAuthor\n * setColor\n * setDescription\n * setFooter\n * setImage\n * setThumbnail\n * setTimestamp\n * setTitle\n * setURL\n\n\n# Constructors\n\n\n# constructor\n\n• new Embed(data?)\n\nCreate a new Embed\n\nsince 1.0.0\n\n# Parameters\n\nNAME    TYPE\ndata?   EmbedOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:24\n\n\n# Properties\n\n\n# author\n\n• Optional author: EmbedAuthorOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:17\n\n----------------------------------------\n\n\n# color\n\n• Optional color: number\n\n# Defined in\n\nsrc/Structures/Embed.ts:13\n\n----------------------------------------\n\n\n# description\n\n• Optional description: string\n\n# Defined in\n\nsrc/Structures/Embed.ts:10\n\n----------------------------------------\n\n\n# fields\n\n• fields: EmbedField[]\n\n# Defined in\n\nsrc/Structures/Embed.ts:18\n\n----------------------------------------\n\n\n# footer\n\n• Optional footer: EmbedFooterOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:14\n\n----------------------------------------\n\n\n# image\n\n• Optional image: EmbedImageOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:15\n\n----------------------------------------\n\n\n# thumbnail\n\n• Optional thumbnail: EmbedImageOptions\n\n# Defined in\n\nsrc/Structures/Embed.ts:16\n\n----------------------------------------\n\n\n# timestamp\n\n• Optional timestamp: string | Date\n\n# Defined in\n\nsrc/Structures/Embed.ts:12\n\n----------------------------------------\n\n\n# title\n\n• Optional title: string\n\n# Defined in\n\nsrc/Structures/Embed.ts:9\n\n----------------------------------------\n\n\n# url\n\n• Optional url: string\n\n# Defined in\n\nsrc/Structures/Embed.ts:11\n\n\n# Methods\n\n\n# addField\n\n▸ addField(name, value, inline?): Embed\n\nAdd a field to embed\n\n# Parameters\n\nNAME      TYPE\nname      string | any[]\nvalue     string | any[]\ninline?   boolean\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:171\n\n----------------------------------------\n\n\n# addFields\n\n▸ addFields(fields): Embed\n\nAdd multiple fields to an embed\n\n# Parameters\n\nNAME     TYPE\nfields   EmbedField[]\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:186\n\n----------------------------------------\n\n\n# setAuthor\n\n▸ setAuthor(name, url, iconURL): Embed\n\nSet the embed author\n\n# Parameters\n\nNAME      TYPE\nname      string | any[]\nurl       undefined | string\niconURL   undefined | string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:145\n\n----------------------------------------\n\n\n# setColor\n\n▸ setColor(color): Embed\n\nSet The Embed Color\n\n# Parameters\n\nNAME    TYPE\ncolor   string | number\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:63\n\n----------------------------------------\n\n\n# setDescription\n\n▸ setDescription(description): Embed\n\nSet the Embed Description\n\n# Parameters\n\nNAME          TYPE\ndescription   string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:52\n\n----------------------------------------\n\n\n# setFooter\n\n▸ setFooter(iconURL, text): Embed\n\nSet The embed footer\n\n# Parameters\n\nNAME      TYPE\niconURL   undefined | string\ntext      string | any[]\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:103\n\n----------------------------------------\n\n\n# setImage\n\n▸ setImage(imageURL): Embed\n\nSet The Embed Image\n\n# Parameters\n\nNAME       TYPE\nimageURL   string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:121\n\n----------------------------------------\n\n\n# setThumbnail\n\n▸ setThumbnail(url): Embed\n\nSet the embed thumbnail\n\n# Parameters\n\nNAME   TYPE\nurl    string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:132\n\n----------------------------------------\n\n\n# setTimestamp\n\n▸ setTimestamp(timestamp?): Embed\n\nSet The Embed Timestamp\n\n# Parameters\n\nNAME        TYPE\ntimestamp   Date\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:92\n\n----------------------------------------\n\n\n# setTitle\n\n▸ setTitle(title): Embed\n\nSet the Embed Title\n\n# Parameters\n\nNAME    TYPE\ntitle   string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:41\n\n----------------------------------------\n\n\n# setURL\n\n▸ setURL(url): Embed\n\nSet The Embed URL\n\n# Parameters\n\nNAME   TYPE\nurl    string\n\n# Returns\n\nEmbed\n\n# Defined in\n\nsrc/Structures/Embed.ts:81",
-      "normalizedContent": "@cofo/framework / exports / embed\n\n\n# class: embed\n\n\n# table of contents\n\n\n# constructors\n\n * constructor\n\n\n# properties\n\n * author\n * color\n * description\n * fields\n * footer\n * image\n * thumbnail\n * timestamp\n * title\n * url\n\n\n# methods\n\n * addfield\n * addfields\n * setauthor\n * setcolor\n * setdescription\n * setfooter\n * setimage\n * setthumbnail\n * settimestamp\n * settitle\n * seturl\n\n\n# constructors\n\n\n# constructor\n\n• new embed(data?)\n\ncreate a new embed\n\nsince 1.0.0\n\n# parameters\n\nname    type\ndata?   embedoptions\n\n# defined in\n\nsrc/structures/embed.ts:24\n\n\n# properties\n\n\n# author\n\n• optional author: embedauthoroptions\n\n# defined in\n\nsrc/structures/embed.ts:17\n\n----------------------------------------\n\n\n# color\n\n• optional color: number\n\n# defined in\n\nsrc/structures/embed.ts:13\n\n----------------------------------------\n\n\n# description\n\n• optional description: string\n\n# defined in\n\nsrc/structures/embed.ts:10\n\n----------------------------------------\n\n\n# fields\n\n• fields: embedfield[]\n\n# defined in\n\nsrc/structures/embed.ts:18\n\n----------------------------------------\n\n\n# footer\n\n• optional footer: embedfooteroptions\n\n# defined in\n\nsrc/structures/embed.ts:14\n\n----------------------------------------\n\n\n# image\n\n• optional image: embedimageoptions\n\n# defined in\n\nsrc/structures/embed.ts:15\n\n----------------------------------------\n\n\n# thumbnail\n\n• optional thumbnail: embedimageoptions\n\n# defined in\n\nsrc/structures/embed.ts:16\n\n----------------------------------------\n\n\n# timestamp\n\n• optional timestamp: string | date\n\n# defined in\n\nsrc/structures/embed.ts:12\n\n----------------------------------------\n\n\n# title\n\n• optional title: string\n\n# defined in\n\nsrc/structures/embed.ts:9\n\n----------------------------------------\n\n\n# url\n\n• optional url: string\n\n# defined in\n\nsrc/structures/embed.ts:11\n\n\n# methods\n\n\n# addfield\n\n▸ addfield(name, value, inline?): embed\n\nadd a field to embed\n\n# parameters\n\nname      type\nname      string | any[]\nvalue     string | any[]\ninline?   boolean\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:171\n\n----------------------------------------\n\n\n# addfields\n\n▸ addfields(fields): embed\n\nadd multiple fields to an embed\n\n# parameters\n\nname     type\nfields   embedfield[]\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:186\n\n----------------------------------------\n\n\n# setauthor\n\n▸ setauthor(name, url, iconurl): embed\n\nset the embed author\n\n# parameters\n\nname      type\nname      string | any[]\nurl       undefined | string\niconurl   undefined | string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:145\n\n----------------------------------------\n\n\n# setcolor\n\n▸ setcolor(color): embed\n\nset the embed color\n\n# parameters\n\nname    type\ncolor   string | number\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:63\n\n----------------------------------------\n\n\n# setdescription\n\n▸ setdescription(description): embed\n\nset the embed description\n\n# parameters\n\nname          type\ndescription   string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:52\n\n----------------------------------------\n\n\n# setfooter\n\n▸ setfooter(iconurl, text): embed\n\nset the embed footer\n\n# parameters\n\nname      type\niconurl   undefined | string\ntext      string | any[]\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:103\n\n----------------------------------------\n\n\n# setimage\n\n▸ setimage(imageurl): embed\n\nset the embed image\n\n# parameters\n\nname       type\nimageurl   string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:121\n\n----------------------------------------\n\n\n# setthumbnail\n\n▸ setthumbnail(url): embed\n\nset the embed thumbnail\n\n# parameters\n\nname   type\nurl    string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:132\n\n----------------------------------------\n\n\n# settimestamp\n\n▸ settimestamp(timestamp?): embed\n\nset the embed timestamp\n\n# parameters\n\nname        type\ntimestamp   date\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:92\n\n----------------------------------------\n\n\n# settitle\n\n▸ settitle(title): embed\n\nset the embed title\n\n# parameters\n\nname    type\ntitle   string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:41\n\n----------------------------------------\n\n\n# seturl\n\n▸ seturl(url): embed\n\nset the embed url\n\n# parameters\n\nname   type\nurl    string\n\n# returns\n\nembed\n\n# defined in\n\nsrc/structures/embed.ts:81",
-      "charsets": {
-        "cjk": true
-      }
     },
     {
       "title": "Home",
@@ -2411,7 +2411,7 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "index.md",
-      "key": "v-e50f2e48",
+      "key": "v-3878459d",
       "path": "/",
       "headersStr": null,
       "content": "Cofo Framework\n\nFramework to build discord bots on top of Eris with ease.\n\n© 2022 Cofo-Framework, All Rights Reserved.",
