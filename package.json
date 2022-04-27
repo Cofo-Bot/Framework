@@ -1,6 +1,6 @@
 {
-  "name": "Cofo-Framework",
-  "version": "1.0.0",
+  "name": "@cofo/framework",
+  "version": "1.0.1",
   "main": "lib/src/index.js",
   "license": "MIT",
   "devDependencies": {
