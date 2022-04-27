@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@cofo/framework@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@cofo/framework/-/framework-1.0.1.tgz#2760ae2f98a34aeb8782ba4d7e34c6a0a49be02b"
+  integrity sha512-9EOuw+4Uv46N5DCQeSkn/i7vPFaUgFfR3bLKJ58FgY8fK2N7rSkQBYz1uyrS9PHKvvhuWhQJ5JkStETPhunOcg==
+  dependencies:
+    eris "^0.16.1"
+    glob "^8.0.1"
+    moment "^2.29.3"
+
 "@eslint/eslintrc@^1.0.5":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.2.1.tgz#8b5e1c49f4077235516bc9ec7d41378c0f69b8c6"
@@ -298,6 +307,11 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dotenv@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
+  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
 
 enquirer@^2.3.5:
   version "2.3.6"
