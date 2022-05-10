@@ -14,7 +14,6 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@cofo/framework": "^1.0.1",
     "eris": "^0.16.1",
     "glob": "^8.0.1",
     "moment": "^2.29.3"
