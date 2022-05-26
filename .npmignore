@@ -1,8 +1,13 @@
 src
 node_modules
-docs
+.github
 .vscode
+docs
+examples
 .editorconfig
 .eslintrc.yml
 .gitignore
+README.md
+tsconfig.json
+typedoc.json
 yarn.lock

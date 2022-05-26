@@ -16,10 +16,10 @@ export class Embed {
 	public author?: Eris.EmbedAuthorOptions;
 	public fields: Eris.EmbedField[];
 	/**
-     * Create a new Embed
-     * @since 1.0.0
-     * @param data
-     */
+	 * Create a new Embed
+	 * @since 1.0.0
+	 * @param data
+	 */
 	constructor(data?: Eris.EmbedOptions) {
 		if (data?.title) {
 			this.title = data.title;
@@ -61,10 +61,10 @@ export class Embed {
 	}
 
 	/**
-     * Set the Embed Title
-     * @param title
-     * @returns
-     */
+	 * Set the Embed Title
+	 * @param title
+	 * @returns
+	 */
 	setTitle(title: string) {
 		if (typeof title !== 'string') {
 			throw new EmbedError('Title must be of type string');
@@ -79,10 +79,10 @@ export class Embed {
 	}
 
 	/**
-     * Set the Embed Description
-     * @param description
-     * @returns
-     */
+	 * Set the Embed Description
+	 * @param description
+	 * @returns
+	 */
 	setDescription(description: string) {
 		if (typeof description !== 'string') {
 			throw new EmbedError('Description must be of type string');
@@ -97,10 +97,10 @@ export class Embed {
 	}
 
 	/**
-     * Set The Embed Color
-     * @param color
-     * @returns
-     */
+	 * Set The Embed Color
+	 * @param color
+	 * @returns
+	 */
 	setColor(color: string | number) {
 		if (typeof color !== 'string' && typeof color !== 'number') {
 			throw new EmbedError(`Invalid color type, Expected string / number instead received ${typeof color}`);
@@ -125,10 +125,10 @@ export class Embed {
 	}
 
 	/**
-     * Set The Embed URL
-     * @param url
-     * @returns
-     */
+	 * Set The Embed URL
+	 * @param url
+	 * @returns
+	 */
 	setURL(url: string) {
 		if (typeof url !== 'string') {
 			throw new EmbedError('Url should be of type string');
@@ -143,10 +143,10 @@ export class Embed {
 	}
 
 	/**
-     * Set The Embed Timestamp
-     * @param timestamp
-     * @returns
-     */
+	 * Set The Embed Timestamp
+	 * @param timestamp
+	 * @returns
+	 */
 	setTimestamp(timestamp = new Date()) {
 		if (Number.isNaN(new Date(timestamp).getTime())) {
 			throw new EmbedError('Invalid Timestamp date.');
@@ -157,11 +157,11 @@ export class Embed {
 	}
 
 	/**
-     * Set The embed footer
-     * @param iconURL
-     * @param text
-     * @returns
-     */
+	 * Set The embed footer
+	 * @param iconURL
+	 * @param text
+	 * @returns
+	 */
 	setFooter(iconURL: string | undefined, text: string | any[]) {
 		if (typeof text !== 'string') {
 			throw new EmbedError('Footer text should be of type string');
@@ -190,10 +190,10 @@ export class Embed {
 	}
 
 	/**
-     * Set The Embed Image
-     * @param imageURL
-     * @returns
-     */
+	 * Set The Embed Image
+	 * @param imageURL
+	 * @returns
+	 */
 	setImage(imageURL: string) {
 		if (typeof imageURL !== 'string') {
 			throw new EmbedError('Image url should be of type string');
@@ -208,10 +208,10 @@ export class Embed {
 	}
 
 	/**
-     * Set the embed thumbnail
-     * @param url
-     * @returns
-     */
+	 * Set the embed thumbnail
+	 * @param url
+	 * @returns
+	 */
 	setThumbnail(url: string) {
 		if (typeof url !== 'string') {
 			throw new EmbedError('Thumbnail url should be of type string');
@@ -226,12 +226,12 @@ export class Embed {
 	}
 
 	/**
-     * Set the embed author
-     * @param name
-     * @param url
-     * @param iconURL
-     * @returns
-     */
+	 * Set the embed author
+	 * @param name
+	 * @param url
+	 * @param iconURL
+	 * @returns
+	 */
 	setAuthor(name: string | any[], url: string | undefined, iconURL: string | undefined) {
 		if (typeof name !== 'string') {
 			throw new EmbedError('Footer text should be of type string');
@@ -272,12 +272,12 @@ export class Embed {
 	}
 
 	/**
-     * Add a field to embed
-     * @param name
-     * @param value
-     * @param inline
-     * @returns
-     */
+	 * Add a field to embed
+	 * @param name
+	 * @param value
+	 * @param inline
+	 * @returns
+	 */
 	addField(name: string | any[], value: string | any[], inline?: boolean | undefined) {
 		if (this.fields.length >= 25) {
 			throw new EmbedError('Embeds cannot exceed 25 fields');
@@ -308,9 +308,9 @@ export class Embed {
 	}
 
 	/**
-     * Add multiple fields to an embed
-     * @param fields
-     */
+	 * Add multiple fields to an embed
+	 * @param fields
+	 */
 	addFields(fields: EmbedField[]) {
 		fields.forEach(field => this.addField(field.name, field.value, field.inline));
 		return this;
