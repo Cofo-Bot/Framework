@@ -1,5 +1,5 @@
 # Cofo-Framework
-- A statically typed framework for building discord bots on top of eris with a lot of additions and helpers for a beginner friendly developer experience.
+- A framework for building discord bots on top of eris with a lot of additions and helpers for a beginner friendly developer experience.
 
 # License
 - This software is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
